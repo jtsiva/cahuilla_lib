@@ -1,0 +1,162 @@
+[
+  {
+    "cahuilla": "cahuilla",
+    "english": ["english"],
+    "pos": ["part of speech"],
+    "origin": "mtn | dst | both | ?",
+    "pronunciation": "relative/path/to/file.mp3",
+    "notes": ["this", "that", "and the other"]
+  },
+  {
+    "cahuilla": "miyaxwen",
+    "english": ["hello"],
+    "pos": ["interjection"],
+    "origin": "?",
+    "pronunciation": "",
+    "notes": ["greetings", "known variation is 'miyaxwe"]
+  },
+  {
+    "cahuilla": "men miyaxwen",
+    "english": ["hello back"],
+    "pos": ["interjection"],
+    "origin": "?",
+    "pronunciation": "",
+    "notes": ["greetings"]
+  },
+  {
+    "cahuilla": "hicha?",
+    "english": ["what?"],
+    "pos": ["question"],
+    "origin": "?",
+    "pronunciation": "",
+    "notes": ["greetings"]
+  },
+  {
+    "cahuilla": "tew",
+    "english": ["to name"],
+    "pos": ["verb"],
+    "origin": "?",
+    "pronunciation": "",
+    "notes": ["greetings", "needs prefix to indicate object"]
+  },
+  {
+    "cahuilla": "mivaxvish",
+    "english": ["to be from"],
+    "pos": ["verb", "question"],
+    "origin": "?",
+    "pronunciation": "",
+    "notes": ["greetings", "needs prefix to indicate object"]
+  },
+  {
+    "cahuilla": "ne'",
+    "english": "I",
+    "pos": ["pronoun"],
+    "origin": "?",
+    "pronunciation": "",
+    "notes": ["greetings"]
+  },
+  {
+    "cahuilla": "'e'",
+    "english": ["you"],
+    "pos": ["pronoun"],
+    "origin": "?",
+    "pronunciation": "",
+    "notes": ["greetings"]
+  },
+  {
+    "cahuilla": "hen-",
+    "english": ["to be"],
+    "pos": ["verb"],
+    "origin": "?",
+    "pronunciation": "",
+    "notes": ["greetings", "prefix"]
+  },
+  {
+    "cahuilla": "-ngax",
+    "english": ["from"],
+    "pos": [""],
+    "origin": "?",
+    "pronunciation": "",
+    "notes": ["greetings", "suffix"]
+  },
+  {
+    "cahuilla": "Paypa",
+    "english": ["later (not today)"],
+    "pos": ["interjection"],
+    "origin": "?",
+    "pronunciation": "",
+    "notes": ["greetings"]
+  },
+  {
+    "cahuilla": "Mawa'",
+    "english": ["later (today)"],
+    "pos": ["interjection"],
+    "origin": "?",
+    "pronunciation": "",
+    "notes": ["greetings"]
+  },
+  {
+    "cahuilla": "enteewnem",
+    "english": ["I will see you"],
+    "pos": ["phrase", "verb"],
+    "origin": "?",
+    "pronunciation": "",
+    "notes": ["greetings", "paired with 'Paypa' and 'Mawa' '"]
+  },
+  {
+    "cahuilla": "Malki",
+    "english": ["Morongo Cahuilla Indian Reservation"],
+    "pos": ["noun"],
+    "origin": "?",
+    "pronunciation": "",
+    "notes": ["greetings"]
+  },
+  {
+    "cahuilla": "Sexi",
+    "english": ["Agua Caliente/Palm Springs Cahuilla"],
+    "pos": ["noun"],
+    "origin": "?",
+    "pronunciation": "",
+    "notes": ["greetings"]
+  },
+  {
+    "cahuilla": "kawiiya",
+    "english": ["Cahuilla"],
+    "pos": ["noun"],
+    "origin": "?",
+    "pronunciation": "",
+    "notes": ["greetings"]
+  },
+  {
+    "cahuilla": "tamika",
+    "english": ["Torres Martinez", "East", "desert"],
+    "pos": ["noun"],
+    "origin": "?",
+    "pronunciation": "",
+    "notes": ["greetings"]
+  },
+  {
+    "cahuilla": "haa",
+    "english": ["okay"],
+    "pos": ["interjection"],
+    "origin": "?",
+    "pronunciation": "",
+    "notes": ["greetings"]
+  },
+  {
+    "cahuilla": "pen",
+    "english": ["and"],
+    "pos": ["conjunction"],
+    "origin": "",
+    "pronunciation": "",
+    "notes": ["greetings"]
+  },
+  {
+    "cahuilla": "Achama",
+    "english": ["Good", "Thank you"],
+    "pos": ["adjective", "noun"],
+    "origin": "",
+    "pronunciation": "",
+    "notes": ["greetings"]
+  }
+]

@@ -9,11 +9,11 @@
   },
   {
     "cahuilla": "miyaxwen",
-    "english": ["hello"],
+    "english": ["hello", "to be in a state", "to somehow exist"],
     "pos": ["interjection"],
     "origin": "?",
     "pronunciation": "",
-    "notes": ["greetings", "known variation is 'miyaxwe"]
+    "notes": ["greetings", "known variation is 'miyaxwe", "feelings"]
   },
   {
     "cahuilla": "men miyaxwen",
@@ -153,10 +153,82 @@
   },
   {
     "cahuilla": "Achama",
-    "english": ["Good", "Thank you"],
+    "english": ["Good", "Thank you", "fine"],
     "pos": ["adjective", "noun"],
     "origin": "",
     "pronunciation": "",
-    "notes": ["greetings"]
+    "notes": ["greetings", "feelings"]
+  },
+  {
+    "cahuilla": "miyaxwenipa",
+    "english": ["why?"],
+    "pos": ["question"],
+    "origin": "",
+    "pronunciation": "",
+    "notes": ["feelings"]
+  },
+  {
+    "cahuilla": "pish",
+    "english": ["that"],
+    "pos": ["conjunction"],
+    "origin": "",
+    "pronunciation": "",
+    "notes": ["feelings"]
+  },
+  {
+    "cahuilla": "mexive",
+    "english": ["to feel", "to be (feeling)"],
+    "pos": ["verb"],
+    "origin": "",
+    "pronunciation": "",
+    "notes": ["feelings"]
+  },
+  {
+    "cahuilla": "sunema",
+    "english": ["sad"],
+    "pos": ["adjective"],
+    "origin": "",
+    "pronunciation": "",
+    "notes": ["feelings"]
+  },
+  {
+    "cahuilla": "sun chayqal",
+    "english": ["happy"],
+    "pos": ["adjective"],
+    "origin": "",
+    "pronunciation": "",
+    "notes": ["feelings"]
+  },
+  {
+    "cahuilla": "he\u00F1uqal",
+    "english": ["angry"],
+    "pos": ["adjective"],
+    "origin": "",
+    "pronunciation": "",
+    "notes": ["feelings"]
+  },
+  {
+    "cahuilla": "ivax",
+    "english": ["now", "today"],
+    "pos": ["noun"],
+    "origin": "",
+    "pronunciation": "",
+    "notes": ["feelings"]
+  },
+  {
+    "cahuilla": "tess",
+    "english": ["also"],
+    "pos": ["adverb"],
+    "origin": "",
+    "pronunciation": "",
+    "notes": ["feelings"]
+  },
+  {
+    "cahuilla": "pe'acham",
+    "english": ["that's good"],
+    "pos": ["phrase"],
+    "origin": "",
+    "pronunciation": "",
+    "notes": ["feelings"]
   }
 ]

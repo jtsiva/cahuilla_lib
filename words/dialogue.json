@@ -23,5 +23,26 @@
       "Luupi: Good. See you later!",
       "Salvador: Okay!"
     ]
+  },
+  {
+    "title": "Miyaxwen pish emexive?",
+    "dialogue": [
+      "Salvadoor: Miyaxwen pish emexive ivax?",
+      "Luupi: Ne' nesun chayqal!",
+      "Salvadoor: Pe' acham!",
+      "Luupi: Heehe! Pen 'e'? Miyaxwen pish emexive ivax?",
+      "Salvadoor: Ne' nesun chayqal tess!",
+      "Salvadoor: Achama. Paypa enteewnem!",
+      "Luupi: Haa! Paypa!"
+    ],
+    "dialogue_eng": [
+      "Salvadoor: How are you feeling today?",
+      "Luupi: I am very happy!",
+      "Salvadoor: That's good!",
+      "Luupi: Yes! And you? How are you feeling today?",
+      "Salvadoor: I am very happy also!",
+      "Salvadoor: Good. See you later!",
+      "Luupi: Okay! Later!"
+    ]
   }
 ]

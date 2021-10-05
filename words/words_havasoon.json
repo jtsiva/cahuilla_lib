@@ -29,7 +29,7 @@
     "pos": ["question"],
     "origin": "?",
     "pronunciation": "",
-    "notes": ["greetings"]
+    "notes": ["greetings", "questions"]
   },
   {
     "cahuilla": "tew",
@@ -238,5 +238,61 @@
     "origin": "",
     "pronunciation": "",
     "notes": ["feelings"]
+  },
+  {
+    "cahuilla": "haxi?",
+    "english": ["who?"],
+    "pos": ["question"],
+    "origin": "",
+    "pronunciation": "",
+    "notes": ["questions"]
+  },
+  {
+    "cahuilla": "mipa?",
+    "english": ["when?"],
+    "pos": ["question"],
+    "origin": "",
+    "pronunciation": "",
+    "notes": ["questions"]
+  },
+  {
+    "cahuilla": "miva?",
+    "english": ["where?"],
+    "pos": ["question"],
+    "origin": "",
+    "pronunciation": "",
+    "notes": ["questions"]
+  },
+  {
+    "cahuilla": "mik?",
+    "english": ["how many?"],
+    "pos": ["question"],
+    "origin": "",
+    "pronunciation": "",
+    "notes": ["questions"]
+  },
+  {
+    "cahuilla": "chepev?",
+    "english": ["Is that true?", "That is true (w/o question mark)"],
+    "pos": ["question", "statement"],
+    "origin": "",
+    "pronunciation": "",
+    "notes": ["questions"]
+  },
+  {
+    "cahuilla": "tawpaki",
+    "english": ["birthday"],
+    "pos": ["noun"],
+    "origin": "",
+    "pronunciation": "",
+    "notes": ["questions"]
+  },
+  {
+    "cahuilla": "ivi",
+    "english": ["this"],
+    "pos": ["noun"],
+    "origin": "",
+    "pronunciation": "",
+    "notes": ["questions"]
   }
 ]

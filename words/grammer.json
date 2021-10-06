@@ -1,7 +1,7 @@
 [
   {
     "topic": "possessive",
-    "explanation": "2nd person is 'e', 1st person is 'ne', and 3rd person is 'he'. This seems to work for both nouns and verbs.",
+    "explanation": "2nd person is 'e', 1st person is 'ne', and 3rd person is 'he' (sometimes if root verb doesn't start with consonant). This seems to work for both nouns and verbs.",
     "examples": [
       "etew=your name",
       "netew=my name",

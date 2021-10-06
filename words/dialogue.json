@@ -44,5 +44,32 @@
       "Salvadoor: Good. See you later!",
       "Luupi: Okay! Later!"
     ]
+  },
+  {
+    "title": "Haxi, hicha, mipa, miva?",
+    "dialogue": [
+      "Salvadoor: Luupi! Mipa etawpaki nanvayaxik?",
+      "Luupi: Ivax! Ivax netawpaxki!",
+      "Salvadoor: Chepev?",
+      "Luupi: Heehe!",
+      "Salvadoor: Haa. Pen mik etawpaki ‘e’?",
+      "Luupi: Ne’ hen nemachumi peta kwan pah netawpaxki",
+      "Salvadoor: Heena! Pen miva ekeweka?",
+      "Luupi: Nekinga hishkewekatem.",
+      "Salvadoor: Achama! kewika nehichinem.",
+      "Luupi: Haa! Penga’pa enteewnem."
+    ],
+    "dialogue_eng": [
+      "Salvadoor: Luupi! When etawpaki nanvayaxik?",
+      "Luupi: Today! Today is my birthday!",
+      "Salvadoor: Is that true?",
+      "Luupi: yes!",
+      "Salvadoor: Okay. And how many birthdays are you? (how old are you)",
+      "Luupi: I am going to be 10 peta 8 birthdays (18 years old)",
+      "Salvadoor: Heena! And where is your party?",
+      "Luupi: At my house hishkewekatem.",
+      "Salvadoor: Good! kewika nehichinem.",
+      "Luupi: Okay! Penga’pa enteewnem."
+    ]
   }
 ]

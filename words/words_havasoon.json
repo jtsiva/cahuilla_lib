@@ -3,7 +3,7 @@
     "cahuilla": "cahuilla",
     "english": ["english"],
     "pos": ["part of speech"],
-    "origin": "mtn | dst | both | ?",
+    "origin": "mtn | dst | common | alt | ?",
     "pronunciation": "relative/path/to/file.mp3",
     "notes": ["this", "that", "and the other"]
   },
@@ -27,7 +27,7 @@
     "cahuilla": "hicha?",
     "english": ["what?"],
     "pos": ["question"],
-    "origin": "?",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["greetings", "questions"]
   },
@@ -43,7 +43,7 @@
     "cahuilla": "mivaxvish",
     "english": ["to be from"],
     "pos": ["verb", "question"],
-    "origin": "?",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["greetings", "needs prefix to indicate object"]
   },
@@ -51,7 +51,7 @@
     "cahuilla": "ne'",
     "english": "I",
     "pos": ["pronoun"],
-    "origin": "?",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["greetings"]
   },
@@ -59,7 +59,7 @@
     "cahuilla": "'e'",
     "english": ["you"],
     "pos": ["pronoun"],
-    "origin": "?",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["greetings"]
   },
@@ -67,7 +67,7 @@
     "cahuilla": "hen-",
     "english": ["to be"],
     "pos": ["verb"],
-    "origin": "?",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["greetings", "prefix"]
   },
@@ -75,7 +75,7 @@
     "cahuilla": "-ngax",
     "english": ["from"],
     "pos": [""],
-    "origin": "?",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["greetings", "suffix"]
   },
@@ -83,7 +83,7 @@
     "cahuilla": "Paypa",
     "english": ["later (not today)"],
     "pos": ["interjection"],
-    "origin": "?",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["greetings"]
   },
@@ -91,7 +91,7 @@
     "cahuilla": "Mawa'",
     "english": ["later (today)"],
     "pos": ["interjection"],
-    "origin": "?",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["greetings"]
   },
@@ -99,7 +99,7 @@
     "cahuilla": "enteewnem",
     "english": ["I will see you"],
     "pos": ["phrase", "verb"],
-    "origin": "?",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["greetings", "paired with 'Paypa' and 'Mawa' '"]
   },
@@ -107,7 +107,7 @@
     "cahuilla": "Malki",
     "english": ["Morongo Cahuilla Indian Reservation"],
     "pos": ["noun"],
-    "origin": "?",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["greetings"]
   },
@@ -115,7 +115,7 @@
     "cahuilla": "Sexi",
     "english": ["Agua Caliente/Palm Springs Cahuilla"],
     "pos": ["noun"],
-    "origin": "?",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["greetings"]
   },
@@ -123,7 +123,7 @@
     "cahuilla": "kawiiya",
     "english": ["Cahuilla"],
     "pos": ["noun"],
-    "origin": "?",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["greetings"]
   },
@@ -131,7 +131,7 @@
     "cahuilla": "tamika",
     "english": ["Torres Martinez", "East", "desert"],
     "pos": ["noun"],
-    "origin": "?",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["greetings"]
   },
@@ -139,7 +139,7 @@
     "cahuilla": "haa",
     "english": ["okay"],
     "pos": ["interjection"],
-    "origin": "?",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["greetings"]
   },
@@ -147,7 +147,7 @@
     "cahuilla": "pen",
     "english": ["and"],
     "pos": ["conjunction"],
-    "origin": "",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["greetings"]
   },
@@ -155,7 +155,7 @@
     "cahuilla": "Achama",
     "english": ["Good", "Thank you", "fine"],
     "pos": ["adjective", "noun"],
-    "origin": "",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["greetings", "feelings"]
   },
@@ -163,7 +163,7 @@
     "cahuilla": "miyaxwenipa",
     "english": ["why?"],
     "pos": ["question"],
-    "origin": "",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["feelings"]
   },
@@ -171,7 +171,7 @@
     "cahuilla": "pish",
     "english": ["that"],
     "pos": ["conjunction"],
-    "origin": "",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["feelings"]
   },
@@ -179,7 +179,7 @@
     "cahuilla": "mexive",
     "english": ["to feel", "to be (feeling)"],
     "pos": ["verb"],
-    "origin": "",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["feelings"]
   },
@@ -187,7 +187,7 @@
     "cahuilla": "sunema",
     "english": ["sad"],
     "pos": ["adjective"],
-    "origin": "",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["feelings"]
   },
@@ -195,7 +195,7 @@
     "cahuilla": "sun chayqal",
     "english": ["happy"],
     "pos": ["adjective"],
-    "origin": "",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["feelings"]
   },
@@ -203,7 +203,7 @@
     "cahuilla": "he\u00F1uqal",
     "english": ["angry"],
     "pos": ["adjective"],
-    "origin": "",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["feelings"]
   },
@@ -211,7 +211,7 @@
     "cahuilla": "ivax",
     "english": ["now", "today"],
     "pos": ["noun"],
-    "origin": "",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["feelings"]
   },
@@ -219,7 +219,7 @@
     "cahuilla": "tess",
     "english": ["also"],
     "pos": ["adverb"],
-    "origin": "",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["feelings"]
   },
@@ -227,7 +227,7 @@
     "cahuilla": "pe'acham",
     "english": ["that's good"],
     "pos": ["phrase"],
-    "origin": "",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["feelings"]
   },
@@ -235,7 +235,7 @@
     "cahuilla": "heehe",
     "english": ["yes"],
     "pos": ["interjection"],
-    "origin": "",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["feelings"]
   },
@@ -243,7 +243,7 @@
     "cahuilla": "haxi?",
     "english": ["who?"],
     "pos": ["question"],
-    "origin": "",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["questions"]
   },
@@ -251,7 +251,7 @@
     "cahuilla": "mipa?",
     "english": ["when?"],
     "pos": ["question"],
-    "origin": "",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["questions"]
   },
@@ -259,7 +259,7 @@
     "cahuilla": "miva?",
     "english": ["where?"],
     "pos": ["question"],
-    "origin": "",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["questions"]
   },
@@ -267,7 +267,7 @@
     "cahuilla": "mik?",
     "english": ["how many?"],
     "pos": ["question"],
-    "origin": "",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["questions"]
   },
@@ -275,7 +275,7 @@
     "cahuilla": "chepev?",
     "english": ["Is that true?", "That is true (w/o question mark)"],
     "pos": ["question", "statement"],
-    "origin": "",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["questions"]
   },
@@ -283,7 +283,7 @@
     "cahuilla": "tawpaki",
     "english": ["birthday"],
     "pos": ["noun"],
-    "origin": "",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["questions"]
   },
@@ -291,7 +291,95 @@
     "cahuilla": "ivi",
     "english": ["this"],
     "pos": ["noun"],
-    "origin": "",
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["questions"]
+  },
+  {
+    "cahuilla": "'i'",
+    "english": ["this"],
+    "pos": ["noun"],
+    "origin": "alt",
+    "pronunciation": "",
+    "notes": ["questions"]
+  },
+  {
+    "cahuilla": "evat",
+    "english": ["that"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["questions"]
+  },
+  {
+    "cahuilla": "et",
+    "english": ["that"],
+    "pos": ["noun"],
+    "origin": "alt",
+    "pronunciation": "",
+    "notes": ["questions"]
+  },
+  {
+    "cahuilla": "kewet",
+    "english": ["party", "celebration"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["questions"]
+  },
+  {
+    "cahuilla": "nanvayaxqal",
+    "english": ["ready"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["questions"]
+  },
+  {
+    "cahuilla": "hiwqal",
+    "english": ["to live here", "to be here"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["questions", "3rd person doesn't prefex he-"]
+  },
+  {
+    "cahuilla": "kinga",
+    "english": ["at/in ___ house"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["questions", "at posessor's housej"]
+  },
+  {
+    "cahuilla": "pulive",
+    "english": ["to be born", "to be dropped", "to fall"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["questions"]
+  },
+  {
+    "cahuilla": "nichily",
+    "english": ["woman"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["questions"]
+  },
+  {
+    "cahuilla": "naxanish",
+    "english": ["man"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["questions"]
+  },
+  {
+    "cahuilla": "hichi",
+    "english": ["go"],
+    "pos": ["action verb"],
+    "origin": "common",
     "pronunciation": "",
     "notes": ["questions"]
   }

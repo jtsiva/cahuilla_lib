@@ -237,7 +237,7 @@
     "pos": ["interjection"],
     "origin": "common",
     "pronunciation": "",
-    "notes": ["feelings"]
+    "notes": ["feelings", "drinks"]
   },
   {
     "cahuilla": "haxi?",
@@ -382,5 +382,21 @@
     "origin": "common",
     "pronunciation": "",
     "notes": ["questions"]
+  },
+  {
+    "cahuilla": "ki'i",
+    "english": ["no"],
+    "pos": ["interjection"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "ha",
+    "english": ["or"],
+    "pos": ["conjunction"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
   }
 ]

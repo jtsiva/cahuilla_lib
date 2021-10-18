@@ -32,10 +32,26 @@
     "notes": ["greetings", "questions"]
   },
   {
+    "cahuilla": "ne",
+    "english": ["I"],
+    "pos": ["pronoun", "prefix"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["greetings", "can appear alone or as prefix"]
+  },
+  {
+    "cahuilla": "'e'",
+    "english": ["you"],
+    "pos": ["pronoun", "prefix"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["greetings", "can appear alone or as prefix"]
+  },
+  {
     "cahuilla": "tew",
     "english": ["to name"],
     "pos": ["verb"],
-    "origin": "?",
+    "origin": "common",
     "pronunciation": "",
     "notes": ["greetings", "needs prefix to indicate object"]
   },
@@ -395,6 +411,22 @@
     "cahuilla": "ha",
     "english": ["or"],
     "pos": ["conjunction"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "pen",
+    "english": ["I"],
+    "pos": ["prefix", "pronoun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "pe",
+    "english": ["you"],
+    "pos": ["prefix", "pronoun"],
     "origin": "common",
     "pronunciation": "",
     "notes": ["drinks"]

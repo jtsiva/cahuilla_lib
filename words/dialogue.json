@@ -71,5 +71,36 @@
       "Salvadoor: Good! kewika nehichinem.",
       "Luupi: Okay! Penga’pa enteewnem."
     ]
+  },
+  {
+    "title": "hee ha ki'i?",
+    "dialogue": [
+      "Salvadoor: Miyaxwen!",
+      "Luupi: Men miyaxwen!",
+      "Salvadoor: Paxa! paxa!",
+      "Luupi: Achama!",
+      "Salvadoor: Pe’ayawqal hichami pish pe’pa’pi?",
+      "Luupi: Heehe! Inish cha pen’ayawalu’",
+      "Salvadoor: Siwma ha yuyma?",
+      "Luupi: Yuyma.",
+      "Salvadoor: Haa.",
+      "Luupi: Pen hicha pe’pa’ka ‘e’?",
+      "Salvadoor: Kaxvee pen’pa’ka!",
+      "Luupi: Tuhaymanish!"
+    ],
+    "dialogue_eng": [
+      "Salvadoor: Hello!",
+      "Luupi: Hello back!",
+      "Salvadoor: Paxa! paxa!",
+      "Luupi: Thanks!",
+      "Salvadoor: You want hichami that pe’pa’pi?",
+      "Luupi: Yes! Inish tea I would like",
+      "Salvadoor: Hot or cold?",
+      "Luupi: Cold.",
+      "Salvadoor: Okay.",
+      "Luupi: And what pe’pa’ka yourself?",
+      "Salvadoor: Coffee pen’pa’ka!",
+      "Luupi: As usual!"
+    ]
   }
 ]

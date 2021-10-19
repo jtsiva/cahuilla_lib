@@ -430,5 +430,133 @@
     "origin": "common",
     "pronunciation": "",
     "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "ayawlu",
+    "english": ["would like"],
+    "pos": ["subjunctive", ""],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "ayawqal",
+    "english": ["to want"],
+    "pos": ["question"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "yawqal",
+    "english": ["to have"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "aywik",
+    "english": ["to need"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "kaxvee",
+    "english": ["coffee"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "cha",
+    "english": ["tea"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "pal",
+    "english": ["water"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "qichily",
+    "english": ["money"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "siwma",
+    "english": ["hot"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "yuyma",
+    "english": ["cold"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "tuhaymanish",
+    "english": ["always", "as usual"],
+    "pos": ["phrase"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "paxa",
+    "english": ["?"],
+    "pos": ["?"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "hichami",
+    "english": ["?"],
+    "pos": ["?"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "pa'pi",
+    "english": ["?"],
+    "pos": ["?"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "inish",
+    "english": ["?"],
+    "pos": ["?"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "pa'ka",
+    "english": ["?"],
+    "pos": ["?"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["drinks"]
   }
 ]

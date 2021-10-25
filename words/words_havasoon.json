@@ -558,5 +558,125 @@
     "origin": "common",
     "pronunciation": "",
     "notes": ["drinks"]
+  },
+  {
+    "cahuilla": "kily",
+    "english": ["not"],
+    "pos": ["modifier"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["true or not true"]
+  },
+  {
+    "cahuilla": "kilye",
+    "english": ["not"],
+    "pos": ["modifier"],
+    "origin": "alt",
+    "pronunciation": "",
+    "notes": ["true or not true"]
+  },
+  {
+    "cahuilla": "eteewe",
+    "english": ["to see"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["true or not true", "unsure about verb stem"]
+  },
+  {
+    "cahuilla": "e'e'nane",
+    "english": ["to know"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["true or not true"]
+  },
+  {
+    "cahuilla": "qal",
+    "english": ["one thing lying down"],
+    "pos": ["position"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["true or not true"]
+  },
+  {
+    "cahuilla": "wen",
+    "english": ["multiple things lying down"],
+    "pos": ["position"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["true or not true"]
+  },
+  {
+    "cahuilla": "hiwen",
+    "english": ["standing"],
+    "pos": ["position"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["true or not true"]
+  },
+  {
+    "cahuilla": "chi'awen",
+    "english": ["sitting"],
+    "pos": ["position"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["true or not true"]
+  },
+  {
+    "cahuilla": "eqwashmal",
+    "english": ["boy"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["true or not true"]
+  },
+  {
+    "cahuilla": "nawishmal",
+    "english": ["girl"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["true or not true"]
+  },
+  {
+    "cahuilla": "ki'at",
+    "english": ["child"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["true or not true"]
+  },
+  {
+    "cahuilla": "awal",
+    "english": ["dog"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["true or not true"]
+  },
+  {
+    "cahuilla": "ipa",
+    "english": ["here"],
+    "pos": ["position"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["true or not true"]
+  },
+  {
+    "cahuilla": "penga",
+    "english": ["there"],
+    "pos": ["position"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["true or not true"]
+  },
+  {
+    "cahuilla": "angapa",
+    "english": ["again"],
+    "pos": ["adverb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["true or not true"]
   }
 ]

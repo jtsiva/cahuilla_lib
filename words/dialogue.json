@@ -102,5 +102,32 @@
       "Salvadoor: Coffee pen’pa’ka!",
       "Luupi: As usual!"
     ]
+  },
+  {
+    "title": "Chepev ha kil chepev?",
+    "dialogue": [
+      "Salvadoor: Miyaxwen",
+      "Luupi: Men miyaxwen",
+      "Salvadoor: Xwaan hiwqal?",
+      "Luupi: Ki’i Kilye hiwqal.",
+      "Salvadoor: Haa. Peteewqal?",
+      "Luupi:!Ki’I, Ivax kily penteewqal.",
+      "Salvadoor: Chepev?",
+      "Luupi: Heehe, Chepev!",
+      "Salvadoor: Haa Mawa angapa ne’ngiilyunem.",
+      "Luupi: Ha! Paypa enteewnem."
+    ],
+    "dialogue_eng": [
+      "Salvadoor: Hello",
+      "Luupi: Hello back",
+      "Salvadoor: Is Xwaan here?",
+      "Luupi: No, he's not here",
+      "Salvadoor: Okay. Have you seen him?",
+      "Luupi:!No, Today I haven't seen him.",
+      "Salvadoor: True?",
+      "Luupi: Yes, true!",
+      "Salvadoor: Okay Later today again ne’ngiilyunem.",
+      "Luupi: Okay! See you later (not today)."
+    ]
   }
 ]

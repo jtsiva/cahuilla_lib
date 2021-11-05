@@ -678,5 +678,245 @@
     "origin": "common",
     "pronunciation": "",
     "notes": ["true or not true"]
+  },
+  {
+    "cahuilla": "suplyi",
+    "english": ["one"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "wih",
+    "english": ["two"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "pah",
+    "english": ["three"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "wichiw",
+    "english": ["four"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "nemakwanang",
+    "english": ["five"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "kwan suplyi",
+    "english": ["six"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "kwan wih",
+    "english": ["seven"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "kwan pah",
+    "english": ["eight"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "kwan wichiw",
+    "english": ["nine"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "nemachumi",
+    "english": ["ten"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "selnek(ish)",
+    "english": ["red"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "tulnek(ish)",
+    "english": ["black"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "tevishnek(ish)",
+    "english": ["white"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "tukwishnek(ish)",
+    "english": ["blue", "green"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "tesetnek(ish)",
+    "english": ["yellow", "brown"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "amnawet",
+    "english": ["big", "large"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "inishily",
+    "english": ["little", "small"],
+    "pos": ["adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "tuyvawenet",
+    "english": ["circle"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "pah amiwenet",
+    "english": ["triangle"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "wichiw amiwenet",
+    "english": ["square"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "willyaxwenet",
+    "english": ["straight line"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "meyiwenet",
+    "english": ["curved line"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "kwa'asni",
+    "english": ["draw"],
+    "pos": ["command"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "kamiisa",
+    "english": ["shirt"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "paxanivel",
+    "english": ["pants"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "waqat",
+    "english": ["shoes"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "umon emem",
+    "english": ["all of you"],
+    "pos": ["pronoun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "tetewan",
+    "english": ["count"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "humaywenetem",
+    "english": ["colors"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "hespen",
+    "english": ["very", "hard"],
+    "pos": ["adjective", "adverb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
   }
 ]

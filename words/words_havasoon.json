@@ -11,9 +11,17 @@
     "cahuilla": "miyaxwen",
     "english": ["hello", "to be in a state", "to somehow exist"],
     "pos": ["interjection"],
-    "origin": "?",
+    "origin": "dst",
     "pronunciation": "",
-    "notes": ["greetings", "known variation is 'miyaxwe", "feelings"]
+    "notes": ["greetings", "feelings"]
+  },
+  {
+    "cahuilla": "miyaxwe",
+    "english": ["hello", "to be in a state", "to somehow exist"],
+    "pos": ["interjection"],
+    "origin": "mtn",
+    "pronunciation": "",
+    "notes": ["Madrigal", "found in various other sources"]
   },
   {
     "cahuilla": "men miyaxwen",
@@ -915,6 +923,46 @@
     "cahuilla": "hespen",
     "english": ["very", "hard"],
     "pos": ["adjective", "adverb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "pik",
+    "english": ["to", "toward"],
+    "pos": ["preposition"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes", "comes after thing or direction"]
+  },
+  {
+    "cahuilla": "wash",
+    "english": ["go ahead"],
+    "pos": ["phrase"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "nanqal",
+    "english": ["to know"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes", "unsure"]
+  },
+  {
+    "cahuilla": "nanal",
+    "english": ["to tell"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "Achaqun em'enan'i",
+    "english": ["You have learned well"],
+    "pos": ["phrase"],
     "origin": "common",
     "pronunciation": "",
     "notes": ["numbers, colors, shapes"]

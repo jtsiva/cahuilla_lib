@@ -129,5 +129,30 @@
       "Salvadoor: Okay Later today again ne’ngiilyunem.",
       "Luupi: Okay! See you later (not today)."
     ]
+  },
+  {
+    "title": "Suplyi, wih, pah",
+    "dialogue": [
+      "Tax'u'uniwet: Miyaxwen umon emem! Haxi pe'tetewpalu nemachumi pik?",
+      "Tax'enanwet 1: Ne! ne!",
+      "Tax'u'uniwet: Haa! Wash tetewan!",
+      "Tax'enanwet 1: Suplyi, wih, pah, wichiw, nemakwanang, kwan suplyi, kwan wih, kwan pah,kwan wichiw, nemachumi!",
+      "Tax'u'uniwet: Achama! Pen haxi pe'e'nanqal humaywenetem?",
+      "Tax'enanwet : Ne! ne!",
+      "Tax'u'uniwet: Haa! Pen nenanal!",
+      "Tax'enanwet 1: Selnekish, Tulnekish, Tevishnekish, Tukwishnekish pen Tesetnekish!",
+      "Tax'u'uniwet: Hespen achama umon! Achaqun em'enan'i!"
+    ],
+    "dialogue_eng": [
+      "Teacher: Hello everyone! Who can count to ten?",
+      "Student 1: Me! me!",
+      "Teacher: Okay! Go ahead and count!",
+      "Student 1: One, two, three, four, five, six, seven, eight, nine, ten!",
+      "Teacher: Good! And who knows the colors?",
+      "Student: Me! me!",
+      "Teacher: Okay! Then tell me!",
+      "Student: Red, black, white, blue/green and yellow/brown.",
+      "Teacher: Very good everyone! You have learned well!"
+    ]
   }
 ]

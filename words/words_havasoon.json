@@ -401,7 +401,7 @@
   },
   {
     "cahuilla": "hichi",
-    "english": ["go"],
+    "english": ["to go"],
     "pos": ["action verb"],
     "origin": "common",
     "pronunciation": "",
@@ -865,8 +865,8 @@
   },
   {
     "cahuilla": "kwa'asni",
-    "english": ["draw"],
-    "pos": ["command"],
+    "english": ["to draw"],
+    "pos": ["command", "verb"],
     "origin": "common",
     "pronunciation": "",
     "notes": ["numbers, colors, shapes"]
@@ -966,5 +966,213 @@
     "origin": "common",
     "pronunciation": "",
     "notes": ["numbers, colors, shapes"]
+  },
+  {
+    "cahuilla": "paxa",
+    "english": ["come in"],
+    "pos": ["phrase"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "nacha",
+    "english": ["to sit"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "we'we",
+    "english": ["to stand", "to halt"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "nakma",
+    "english": ["to listen"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "tee",
+    "english": ["too look", "to watch"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "pa'",
+    "english": ["to drink"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "kwa'a",
+    "english": ["to eat (something specific"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!", "doesn't conjugate"]
+  },
+  {
+    "cahuilla": "wayiki",
+    "english": ["to eat"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "teklu'",
+    "english": ["to stop"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "tekya",
+    "english": ["to be still"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "chemi",
+    "english": ["to be quiet"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "navuk",
+    "english": ["to come"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "ipika",
+    "english": ["to here"],
+    "pos": ["direction"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "siyaqe",
+    "english": ["to move"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "pepuchaq",
+    "english": ["to jump"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!", "possibly includes subject prefix"]
+  },
+  {
+    "cahuilla": "taxma",
+    "english": ["to sing"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "chengen",
+    "english": ["to dance"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "sesem",
+    "english": ["to smile", "to laugh"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "maxa",
+    "english": ["to give"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "kusa",
+    "english": ["to take"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "tav'a",
+    "english": ["to put", "to place"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "peqepay",
+    "english": ["to throw"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!", "possibly includes subject prefix"]
+  },
+  {
+    "cahuilla": "wa'ish",
+    "english": ["meat"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!"]
+  },
+  {
+    "cahuilla": "kwal",
+    "english": ["?"],
+    "pos": ["?"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!", "unknown"]
+  },
+  {
+    "cahuilla": "emuqa",
+    "english": ["?"],
+    "pos": ["?"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!", "unknown"]
+  },
+  {
+    "cahuilla": "metewet",
+    "english": ["A lot"],
+    "pos": ["adverb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["come in!", "unsure"]
   }
 ]

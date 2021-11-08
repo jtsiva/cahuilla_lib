@@ -154,5 +154,32 @@
       "Student: Red, black, white, blue/green and yellow/brown.",
       "Teacher: Very good everyone! You have learned well!"
     ]
+  },
+  {
+    "title": "Paxa! Paxa!",
+    "dialogue": [
+      "Salvadoor: Miyaxwen",
+      "Luupi: Men miyaxwen",
+      "Salvadoor: Paxa! paxa!",
+      "Luupi: Heehe.",
+      "Salvadoor: Nacha! nacha!",
+      "Luupi: Haa!",
+      "Salvadoor: kwal pish emuqa?",
+      "Luupi: Heehe!",
+      "Salvador: Kwa’a! kwa’a! Metewet wa’ish wen.",
+      "Luupi: Achama!"
+    ],
+    "dialogue_eng": [
+      "Salvadoor: Hello",
+      "Luupi: Hello back",
+      "Salvadoor: Come in! come in!",
+      "Luupi: Yes",
+      "Salvadoor: Sit! Sit",
+      "Luupi: Okay!",
+      "Salvadoor: Are you hungry?",
+      "Luupi: Yes!",
+      "Salvador: Eat! Eat! There is a lot of meat",
+      "Luupi: Thank you!"
+    ]
   }
 ]

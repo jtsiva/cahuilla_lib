@@ -1,6 +1,6 @@
 [
   {
-    "topic": "possessive",
+    "topic": "object conjugation",
     "explanation": "2nd person is 'e', 1st person is 'ne', and 3rd person is 'he' (sometimes if root verb doesn't start with consonant). This seems to work for both nouns and verbs.",
     "examples": [
       "etew=your name",
@@ -8,7 +8,9 @@
       "hetew=he/she/their name",
       "ehiwqal=you live/are here",
       "nehiwqal=I live/am here",
-      "hiwqal=he/she live/is here"
+      "hiwqal=he/she live/is here",
+      "nenakma=listen to me",
+      "netee=look at me"
     ]
   },
   {

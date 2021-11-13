@@ -795,7 +795,7 @@
     "cahuilla": "tukwishnek(ish)",
     "english": ["blue", "green"],
     "pos": ["adjective"],
-    "origin": "common",
+    "origin": "dst",
     "pronunciation": "",
     "notes": ["numbers, colors, shapes"]
   },
@@ -1169,10 +1169,298 @@
   },
   {
     "cahuilla": "metewet",
-    "english": ["A lot"],
+    "english": ["a lot"],
     "pos": ["adverb"],
     "origin": "common",
     "pronunciation": "",
     "notes": ["come in!", "unsure"]
+  },
+  {
+    "cahuilla": "ivim",
+    "english": ["these"],
+    "pos": ["pronoun", "plural"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those", "plural of ivi"]
+  },
+  {
+    "cahuilla": "evatem",
+    "english": ["those"],
+    "pos": ["pronoun", "plural"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those", "plural of evat"]
+  },
+  {
+    "cahuilla": "mewih",
+    "english": ["two (animals or people)"],
+    "pos": ["pronoun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "mepah",
+    "english": ["three (animals or people)"],
+    "pos": ["pronoun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "mewichiw",
+    "english": ["four (animals or people)"],
+    "pos": ["pronoun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "a'amnawet",
+    "english": ["big ones"],
+    "pos": ["pronoun", "adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "'i'nishmalyem",
+    "english": ["small ones"],
+    "pos": ["pronoun", "adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "selnekchem",
+    "english": ["red ones"],
+    "pos": ["pronoun", "adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "tulnekchem",
+    "english": ["black ones"],
+    "pos": ["pronoun", "adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "tevishnekchem",
+    "english": ["white ones"],
+    "pos": ["pronoun", "adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "tukwishnekchem",
+    "english": ["blue ones", "green ones"],
+    "pos": ["pronoun", "adjective"],
+    "origin": "dst",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "tesnekchem",
+    "english": ["yellow ones", "brown ones"],
+    "pos": ["pronoun", "adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "wavu'chem",
+    "english": ["tall ones"],
+    "pos": ["pronoun", "adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "he'achem",
+    "english": ["pets"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "'a'walem",
+    "english": ["dogs"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "wikimalyem",
+    "english": ["birds"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "gaatu'um",
+    "english": ["cats"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "kiyulem",
+    "english": ["fish (plural)"],
+    "pos": ["noun"],
+    "origin": "dst",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "pasuktam",
+    "english": ["horses"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "mingkim",
+    "english": ["relatives"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "ewaxalyem",
+    "english": ["younger sisters"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "eqisem",
+    "english": ["older sisters"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "eyuulyem",
+    "english": ["younger brothers"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "epasem",
+    "english": ["older brothers"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "emaylyam",
+    "english": ["babies", "children"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "kikitam",
+    "english": ["children"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "metechem",
+    "english": ["many (animals or people)"],
+    "pos": ["pronoun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "hemtew",
+    "english": ["their names"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "chemtew",
+    "english": ["our names"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "emtew",
+    "english": ["your guys' names"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "melkichem",
+    "english": ["Whites", "Americans", "Europeans"],
+    "pos": ["pronoun", "adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "tulyikchem",
+    "english": ["African Americans"],
+    "pos": ["pronoun", "adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "chi'achem",
+    "english": ["Hispanics", "Mexicans"],
+    "pos": ["pronoun", "adjective"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "ipa'hemqal",
+    "english": ["are here (people or animals)"],
+    "pos": ["positional phrase"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "penga'hemqal",
+    "english": ["are there (people or animals)"],
+    "pos": ["positional phrase"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "et'elelqwish",
+    "english": ["you're bad"],
+    "pos": ["phrase"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["these and those"]
   }
 ]

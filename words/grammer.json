@@ -17,5 +17,10 @@
     "topic": "you and me",
     "explanation": "There are multiple ways to refer to you ('e' and pe) and myself (ne and pen). I do not know the different use cases at this time.",
     "examples": ["pen'yawqal=I have", "pe'yawqal=You have"]
+  },
+  {
+    "topic": "Loan words",
+    "explanation": "'ki added to kamiisa when posessive prefix added. Reason unknown.",
+    "examples": ["ne'kamiisa'ki, ekamiisa'ki"]
   }
 ]

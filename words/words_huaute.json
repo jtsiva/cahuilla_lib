@@ -536,14 +536,6 @@
     "notes": ["drinks"]
   },
   {
-    "cahuilla": "paxa",
-    "english": ["?"],
-    "pos": ["?"],
-    "origin": "common",
-    "pronunciation": "",
-    "notes": ["drinks"]
-  },
-  {
     "cahuilla": "hichami",
     "english": ["?"],
     "pos": ["?"],
@@ -885,7 +877,7 @@
     "pos": ["noun"],
     "origin": "common",
     "pronunciation": "",
-    "notes": ["numbers, colors, shapes"]
+    "notes": ["numbers, colors, shapes", "whose things"]
   },
   {
     "cahuilla": "paxanivel",
@@ -893,7 +885,7 @@
     "pos": ["noun"],
     "origin": "common",
     "pronunciation": "",
-    "notes": ["numbers, colors, shapes"]
+    "notes": ["numbers, colors, shapes", "whose things"]
   },
   {
     "cahuilla": "waqat",
@@ -901,7 +893,7 @@
     "pos": ["noun"],
     "origin": "common",
     "pronunciation": "",
-    "notes": ["numbers, colors, shapes"]
+    "notes": ["numbers, colors, shapes", "whose things"]
   },
   {
     "cahuilla": "umon emem",
@@ -981,7 +973,7 @@
     "pos": ["phrase"],
     "origin": "common",
     "pronunciation": "",
-    "notes": ["come in!"]
+    "notes": ["drinks", "come in!"]
   },
   {
     "cahuilla": "nacha",
@@ -1560,22 +1552,6 @@
     "notes": ["whose things"]
   },
   {
-    "cahuilla": "kamiisa",
-    "english": ["shirt"],
-    "pos": ["noun"],
-    "origin": "loan",
-    "pronunciation": "",
-    "notes": ["whose things"]
-  },
-  {
-    "cahuilla": "paxanivel",
-    "english": ["pants"],
-    "pos": ["noun"],
-    "origin": "common",
-    "pronunciation": "",
-    "notes": ["whose things"]
-  },
-  {
     "cahuilla": "yumuvel",
     "english": ["hat"],
     "pos": ["noun"],
@@ -1586,14 +1562,6 @@
   {
     "cahuilla": "meedes",
     "english": ["socks"],
-    "pos": ["noun"],
-    "origin": "common",
-    "pronunciation": "",
-    "notes": ["whose things"]
-  },
-  {
-    "cahuilla": "waqat",
-    "english": ["shoes"],
     "pos": ["noun"],
     "origin": "common",
     "pronunciation": "",
@@ -1667,6 +1635,30 @@
     "cahuilla": "ne mama",
     "english": ["my mom (affectionate)"],
     "pos": ["noun", "possessive"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "temanga",
+    "english": ["on the ground"],
+    "pos": ["position"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "exely'a",
+    "english": ["?"],
+    "pos": ["?"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "waqish",
+    "english": ["?"],
+    "pos": ["?"],
     "origin": "common",
     "pronunciation": "",
     "notes": ["whose things"]

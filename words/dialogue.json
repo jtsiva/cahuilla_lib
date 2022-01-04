@@ -4,11 +4,11 @@
     "dialogue": [
       "Salvadoor: Miyaxwen!",
       "Luupi: Men miyaxwen!",
-      "Salvadoor: Ne’ netew Salvadoor, hicha ‘e’ etew?",
-      "Luupi: Ne’ netew Luupi.",
+      "Salvadoor: Ne' netew Salvadoor, hicha 'e' etew?",
+      "Luupi: Ne' netew Luupi.",
       "Salvadoor: Haa! pen emivaxvish?",
-      "Luupi: Ne’ henkawiiyangax! pen emivaxvish ‘e’?",
-      "Salvadoor: Ne’ hentamingax",
+      "Luupi: Ne' henkawiiyangax! pen emivaxvish 'e'?",
+      "Salvadoor: Ne' hentamingax",
       "Luupi: Achama. Paypa enteewnem!",
       "Salvador: Haa!"
     ],
@@ -52,12 +52,12 @@
       "Luupi: Ivax! Ivax netawpaxki!",
       "Salvadoor: Chepev?",
       "Luupi: Heehe!",
-      "Salvadoor: Haa. Pen mik etawpaki ‘e’?",
-      "Luupi: Ne’ hen nemachumi peta kwan pah netawpaxki",
+      "Salvadoor: Haa. Pen mik etawpaki 'e'?",
+      "Luupi: Ne' hen nemachumi peta kwan pah netawpaxki",
       "Salvadoor: Heena! Pen miva ekeweka?",
       "Luupi: Nekinga hishkewekatem.",
       "Salvadoor: Achama! kewika nehichinem.",
-      "Luupi: Haa! Penga’pa enteewnem."
+      "Luupi: Haa! Penga'pa enteewnem."
     ],
     "dialogue_eng": [
       "Salvadoor: Luupi! When etawpaki nanvayaxik?",
@@ -69,7 +69,7 @@
       "Salvadoor: Heena! And where is your party?",
       "Luupi: At my house hishkewekatem.",
       "Salvadoor: Good! kewika nehichinem.",
-      "Luupi: Okay! Penga’pa enteewnem."
+      "Luupi: Okay! Penga'pa enteewnem."
     ]
   },
   {
@@ -79,13 +79,13 @@
       "Luupi: Men miyaxwen!",
       "Salvadoor: Paxa! paxa!",
       "Luupi: Achama!",
-      "Salvadoor: Pe’ayawqal hichami pish pe’pa’pi?",
-      "Luupi: Heehe! Inish cha pen’ayawalu’",
+      "Salvadoor: Pe'ayawqal hichami pish pe'pa'pi?",
+      "Luupi: Heehe! Inish cha pen'ayawalu'",
       "Salvadoor: Siwma ha yuyma?",
       "Luupi: Yuyma.",
       "Salvadoor: Haa.",
-      "Luupi: Pen hicha pe’pa’ka ‘e’?",
-      "Salvadoor: Kaxvee pen’pa’ka!",
+      "Luupi: Pen hicha pe'pa'ka 'e'?",
+      "Salvadoor: Kaxvee pen'pa'ka!",
       "Luupi: Tuhaymanish!"
     ],
     "dialogue_eng": [
@@ -93,13 +93,13 @@
       "Luupi: Hello back!",
       "Salvadoor: Paxa! paxa!",
       "Luupi: Thanks!",
-      "Salvadoor: You want hichami that pe’pa’pi?",
+      "Salvadoor: You want hichami that pe'pa'pi?",
       "Luupi: Yes! Inish tea I would like",
       "Salvadoor: Hot or cold?",
       "Luupi: Cold.",
       "Salvadoor: Okay.",
-      "Luupi: And what pe’pa’ka yourself?",
-      "Salvadoor: Coffee pen’pa’ka!",
+      "Luupi: And what pe'pa'ka yourself?",
+      "Salvadoor: Coffee pen'pa'ka!",
       "Luupi: As usual!"
     ]
   },
@@ -109,12 +109,12 @@
       "Salvadoor: Miyaxwen",
       "Luupi: Men miyaxwen",
       "Salvadoor: Xwaan hiwqal?",
-      "Luupi: Ki’i Kilye hiwqal.",
+      "Luupi: Ki'i Kilye hiwqal.",
       "Salvadoor: Haa. Peteewqal?",
-      "Luupi:!Ki’I, Ivax kily penteewqal.",
+      "Luupi:!Ki'I, Ivax kily penteewqal.",
       "Salvadoor: Chepev?",
       "Luupi: Heehe, Chepev!",
-      "Salvadoor: Haa Mawa angapa ne’ngiilyunem.",
+      "Salvadoor: Haa Mawa angapa ne'ngiilyunem.",
       "Luupi: Ha! Paypa enteewnem."
     ],
     "dialogue_eng": [
@@ -126,7 +126,7 @@
       "Luupi:!No, Today I haven't seen him.",
       "Salvadoor: True?",
       "Luupi: Yes, true!",
-      "Salvadoor: Okay Later today again ne’ngiilyunem.",
+      "Salvadoor: Okay Later today again ne'ngiilyunem.",
       "Luupi: Okay! See you later (not today)."
     ]
   },
@@ -166,7 +166,7 @@
       "Luupi: Haa!",
       "Salvadoor: kwal pish emuqa?",
       "Luupi: Heehe!",
-      "Salvador: Kwa’a! kwa’a! Metewet wa’ish wen.",
+      "Salvador: Kwa'a! kwa'a! Metewet wa'ish wen.",
       "Luupi: Achama!"
     ],
     "dialogue_eng": [
@@ -180,6 +180,37 @@
       "Luupi: Yes!",
       "Salvador: Eat! Eat! There is a lot of meat",
       "Luupi: Thank you!"
+    ]
+  },
+  {
+    "title": "Haxim hem'mexana'?",
+    "dialogue": [
+      "Choona: Haxim hem'mexana ivim xelyalem temanga?",
+      "Domiingo: Et kamiisa kily nemexana! Et Xwaan mexana!",
+      "Choona: Xwaan! 'I' ekamiisa'ki?",
+      "Xwaan: Ki'i! Kily nemexana! Xosaay mexana!",
+      "Choona: Xosaay! 'I' ekamiisa'ki?",
+      "Xoosay: Ki'i! Kily nemexana! Maanika' mexana!",
+      "Choona: Maanika'! 'I' ekamiisa ki?",
+      "Maanika': Ki'i! Kily nemexana! Doloores mexana!",
+      "Choona: Doloores! 'I' ekamiisa'ki? Doloores!",
+      "Doloores: Hee'he! 'I' ne'kamiisa'ki, et nepaxanive', et newaq'a, pen et nemeedes'ki temanga!",
+      "Choona: Haa! Pen exely'a waqish hivi!",
+      "Doloores: Heehe nemaama!"
+    ],
+    "dialogue_eng": [
+      "Choona: Whose clothes are these on the ground?",
+      "Domiingo: That shirt is not mine! That is Juan's!",
+      "Choona: Juan! Is this your shirt?",
+      "Xwaan: No! It's not mine! It is José's!",
+      "Choona: José! Is this your shirt?",
+      "Xoosay: No! It's not mine! It is Monica's!",
+      "Choona: Monica! Is this your shirt?",
+      "Maanika': No! It's not mine! It is Dolores'!",
+      "Choona: Dolores! Is this your shirt? Dolores!",
+      "Doloores: Yes! This is my shirt, those are my pants, those are my shoes, and those are my socks on the ground!",
+      "Choona: I see! Pick them up then!",
+      "Doloores: Yes mama"
     ]
   }
 ]

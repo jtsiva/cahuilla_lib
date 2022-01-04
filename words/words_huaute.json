@@ -41,11 +41,11 @@
   },
   {
     "cahuilla": "ne",
-    "english": ["I"],
-    "pos": ["pronoun", "prefix"],
+    "english": ["I", "my"],
+    "pos": ["pronoun", "possessive pronoun", "prefix"],
     "origin": "common",
     "pronunciation": "",
-    "notes": ["greetings", "can appear alone or as prefix"]
+    "notes": ["greetings", "can appear alone or as prefix", "whose things"]
   },
   {
     "cahuilla": "'e'",
@@ -54,6 +54,14 @@
     "origin": "common",
     "pronunciation": "",
     "notes": ["greetings", "can appear alone or as prefix"]
+  },
+  {
+    "cahuilla": "e",
+    "english": ["your"],
+    "pos": ["possessive pronoun", "prefix"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
   },
   {
     "cahuilla": "tew",
@@ -1462,5 +1470,205 @@
     "origin": "common",
     "pronunciation": "",
     "notes": ["these and those"]
+  },
+  {
+    "cahuilla": "he",
+    "english": ["his", "hers", "its"],
+    "pos": ["pronoun", "prefix"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "hem",
+    "english": ["their"],
+    "pos": ["possessive pronoun", "prefix"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "chem",
+    "english": ["our"],
+    "pos": ["possessive pronoun", "prefix"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "em",
+    "english": ["your guys'"],
+    "pos": ["possessive pronoun", "prefix"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "mexana",
+    "english": ["one's possessions"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "wayismal",
+    "english": ["plate"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "tapa'mal",
+    "english": ["bowl"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "kava'mal",
+    "english": ["cup"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "tukvash",
+    "english": ["knife"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "salsalawet",
+    "english": ["fork"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "kuchaara",
+    "english": ["spoon"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "kamiisa",
+    "english": ["shirt"],
+    "pos": ["noun"],
+    "origin": "loan",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "paxanivel",
+    "english": ["pants"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "yumuvel",
+    "english": ["hat"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "meedes",
+    "english": ["socks"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "waqat",
+    "english": ["shoes"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "elat",
+    "english": ["dress"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "xelyal",
+    "english": ["clothes"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "yulaka",
+    "english": ["hair", "head"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things", "unsure"]
+  },
+  {
+    "cahuilla": "push",
+    "english": ["eyes", "face"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things", "unsure"]
+  },
+  {
+    "cahuilla": "qichily",
+    "english": ["money"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "kish",
+    "english": ["house"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "wayikiwenet",
+    "english": ["food"],
+    "pos": ["noun"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "hivi",
+    "english": ["to take (more than 1)", "to pick up (more than 1)"],
+    "pos": ["verb"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
+  },
+  {
+    "cahuilla": "ne mama",
+    "english": ["my mom (affectionate)"],
+    "pos": ["noun", "possessive"],
+    "origin": "common",
+    "pronunciation": "",
+    "notes": ["whose things"]
   }
 ]

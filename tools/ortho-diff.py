@@ -16,12 +16,17 @@ def get_unique_chars(ortho_dict):
 
     return unique_ortho_chars
 
-def get_orthography(str, unique_ortho_chars):
+def get_orthography(string, unique_ortho_chars):
     """
     Check string
     """
-    for key, chars in unique_ortho_chars:
-        if 
+    matching_ortho = "None"
+    for key, chars in unique_ortho_chars.items():
+        if any(char in string for char in chars):
+            matching_ortho = key
+
+    return matching_ortho
+
 
 def main():
     parser = argparse.ArgumentParser(description='')
@@ -31,18 +36,23 @@ def main():
 
     args = parser.parse_args()
 
-    with open('../sounds/orthography.json', 'r') as file:
+    with open('../sounds/orthography.json') as file:
         ortho_dict = json.load(file)
 
-    print (get_unique_chars(ortho_dict))
+    # print (get_unique_chars(ortho_dict))
 
-    #print (ortho_dict)
+    # print (get_orthography(args.string, get_unique_chars(ortho_dict)))
 
-    # for key in ortho_dict:
-    #     ortho_dict[key]['conv'] = ''
-    #     for ch in args.string:
-    #         if ch is not '':
-    #             pass
+    orthography = get_orthography(args.string, get_unique_chars(ortho_dict))
+    print (orthography)
+
+    new_str = args.string
+    for key in ortho_dict:
+        if key is not orthography and len(ortho_dict[orthography]) == len(ortho_dict[key]):
+            for i in range(len(ortho_dict[orthography])):
+                new_str = new_str.replace(ortho_dict[orthography][i], ortho_dict[key][i])
+
+            print(f"{key}: {new_str}")
             
 if __name__ == "__main__":
     main()

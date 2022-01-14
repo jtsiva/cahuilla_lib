@@ -9,10 +9,14 @@ def get_unique_chars(ortho_dict):
     """
     unique_ortho_chars = {}
     for key in ortho_dict:
+        # print (len(ortho_dict[key]))
         unique_ortho_chars[key] = set(ortho_dict[key])
         for key2 in ortho_dict:
             if key != key2:
                 unique_ortho_chars[key].difference_update (set(ortho_dict[key2]))
+
+
+    print (unique_ortho_chars)
 
     return unique_ortho_chars
 
@@ -31,9 +35,10 @@ def get_orthography(string, unique_ortho_chars):
 def convert_orthography(text, ortho_dict):
     orthography = get_orthography(text, get_unique_chars(ortho_dict))
     output = ""
-    new_str = text
-    #print (orthography)
+    
+    print (orthography)
     for key in ortho_dict:
+        new_str = text
         if len(ortho_dict[orthography]) == len(ortho_dict[key]):
             for i in range(len(ortho_dict[orthography])):
                 new_str = new_str.replace(ortho_dict[orthography][i], ortho_dict[key][i])

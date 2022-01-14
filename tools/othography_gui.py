@@ -18,14 +18,14 @@ class MainWindow():
         self.output_text = Text(self.input_output_frame, state='disabled', width=60)
         self.output_text.pack(side=RIGHT)
 
-        self.convert_button = Button(self.input_output_frame, text = '>>>', command=partial(self.convert_orthography, self.input_text.get("1.0",END)))
+        self.convert_button = Button(self.input_output_frame, text = '>>>', command=self.convert_orthography)
         self.convert_button.pack(side = RIGHT)
         
-        ortho_dict = {}
+        self.ortho_dict = {}
         with open ('../sounds/orthography.json') as file:
-            ortho_dict = json.load(file)
+            self.ortho_dict = json.load(file)
 
-        for ortho_name, chars in ortho_dict.items():
+        for ortho_name, chars in self.ortho_dict.items():
             self.create_orthography_buttons(self.root, ortho_name.split('_')[0], chars)
 
     def update_input_text(self, char):
@@ -42,8 +42,11 @@ class MainWindow():
             btn.pack(side = LEFT)
 
 
-    def convert_orthography(self, text):
-        pass
+    def convert_orthography(self):
+        self.output_text.configure(state=NORMAL)
+        self.output_text.delete("1.0", END)
+        self.output_text.insert(END, ortho_diff.convert_orthography(self.input_text.get("1.0",END), self.ortho_dict))
+        self.output_text.configure(state=DISABLED)
 
     def run(self):
         self.root.mainloop()

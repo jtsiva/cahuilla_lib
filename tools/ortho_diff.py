@@ -32,6 +32,7 @@ def convert_orthography(text, ortho_dict):
     orthography = get_orthography(text, get_unique_chars(ortho_dict))
     output = ""
     new_str = text
+    #print (orthography)
     for key in ortho_dict:
         if len(ortho_dict[orthography]) == len(ortho_dict[key]):
             for i in range(len(ortho_dict[orthography])):

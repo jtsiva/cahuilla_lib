@@ -28,6 +28,19 @@ def get_orthography(string, unique_ortho_chars):
     return matching_ortho
 
 
+def convert_orthography(text, ortho_dict):
+    orthography = get_orthography(text, get_unique_chars(ortho_dict))
+    output = ""
+    new_str = text
+    for key in ortho_dict:
+        if len(ortho_dict[orthography]) == len(ortho_dict[key]):
+            for i in range(len(ortho_dict[orthography])):
+                new_str = new_str.replace(ortho_dict[orthography][i], ortho_dict[key][i])
+
+            output += f"{key}: {new_str}\n"
+
+    return output.strip()
+
 def main():
     parser = argparse.ArgumentParser(description='')
 
@@ -43,16 +56,8 @@ def main():
 
     # print (get_orthography(args.string, get_unique_chars(ortho_dict)))
 
-    orthography = get_orthography(args.string, get_unique_chars(ortho_dict))
-    print (orthography)
-
-    new_str = args.string
-    for key in ortho_dict:
-        if key is not orthography and len(ortho_dict[orthography]) == len(ortho_dict[key]):
-            for i in range(len(ortho_dict[orthography])):
-                new_str = new_str.replace(ortho_dict[orthography][i], ortho_dict[key][i])
-
-            print(f"{key}: {new_str}")
+    print(convert_orthography(args.string, ortho_dict))
+    
             
 if __name__ == "__main__":
     main()

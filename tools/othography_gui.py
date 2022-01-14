@@ -28,7 +28,12 @@ def main():
     root.winfo_toplevel().title("Cahuilla Orthography")
     output_text_update = create_output_text(root)
     
-    create_orthography_buttons(root, 'aaa', ['a', 'b', 'c'], output_text_update)
+    ortho_dict = {}
+    with open ('../sounds/orthography.json') as file:
+        ortho_dict = json.load(file)
+
+    for ortho_name, chars in ortho_dict.items():
+        create_orthography_buttons(root, ortho_name.split('_')[0], chars, output_text_update)
 
     # Code to add widgets will go here...
     root.mainloop()

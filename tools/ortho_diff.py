@@ -25,8 +25,16 @@ def get_orthography(string, unique_ortho_chars):
     Check string
     """
     matching_ortho = "None"
-    for key, chars in unique_ortho_chars.items():
-        if any(char in string for char in chars):
+    # for key, chars in unique_ortho_chars.items():
+    #     if any(char in string for char in chars):
+    #         matching_ortho = key
+
+    for key, chars in ortho_dict:
+        char_cnt = 0
+        for char in chars:
+            char_cnt += string.count(char)
+
+        if char_cnt == len(string):
             matching_ortho = key
 
     return matching_ortho

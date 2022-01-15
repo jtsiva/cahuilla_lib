@@ -13,14 +13,15 @@ def get_unique_chars(ortho_dict):
         unique_ortho_chars[key] = set(ortho_dict[key])
         for key2 in ortho_dict:
             if key != key2:
-                unique_ortho_chars[key].difference_update (set(ortho_dict[key2]))
+                # unique_ortho_chars[key].difference_update (set(ortho_dict[key2]))
+                unique_ortho_chars[key] =  set(ortho_dict[key]) - (set(ortho_dict[key2]))
 
 
     print (unique_ortho_chars)
 
     return unique_ortho_chars
 
-def get_orthography(string, unique_ortho_chars):
+def get_orthography(string, ortho_dict):
     """
     Check string
     """
@@ -29,19 +30,31 @@ def get_orthography(string, unique_ortho_chars):
     #     if any(char in string for char in chars):
     #         matching_ortho = key
 
-    for key, chars in ortho_dict:
-        char_cnt = 0
-        for char in chars:
-            char_cnt += string.count(char)
+    keys_to_check = []
 
-        if char_cnt == len(string):
+    #check for characters that don't exist in orthography
+    for key, chars in get_unique_chars(ortho_dict).items():
+        if any(char in string for char in chars):
+            keys_to_check.append(key)
+
+    #Now check
+    for key in keys_to_check:
+        test_str = string
+        print (key)
+        for char in ortho_dict[key]:
+            print (f"{char} -> {test_str}")
+            test_str = test_str.replace(char, "")
+            
+
+        if 0 == len(test_str):
             matching_ortho = key
+            break
 
     return matching_ortho
 
 
 def convert_orthography(text, ortho_dict):
-    orthography = get_orthography(text, get_unique_chars(ortho_dict))
+    orthography = get_orthography(text, ortho_dict)
     output = ""
     
     print (orthography)

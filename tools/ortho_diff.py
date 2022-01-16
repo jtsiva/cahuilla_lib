@@ -42,7 +42,10 @@ def convert_orthography(text, ortho_dict):
             for i in range(len(ortho_dict[orthography])):
                 new_str = new_str.replace(ortho_dict[orthography][i], ortho_dict[key][i])
 
-            output += f"{key}: {new_str}\n"
+            if key == orthography:
+                output += f"*{key}: {new_str}*\n"
+            else:
+                output += f"{key}: {new_str}\n"
 
     return output.strip()
 

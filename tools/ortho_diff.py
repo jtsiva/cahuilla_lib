@@ -33,7 +33,8 @@ def get_orthography(string, ortho_dict):
 
 def convert_orthography(text, ortho_dict):
     orthography = get_orthography(text, ortho_dict)
-    output = ""
+    output = {"source" : orthography}
+
     
     # print (orthography)
     for key in ortho_dict:
@@ -42,12 +43,9 @@ def convert_orthography(text, ortho_dict):
             for i in range(len(ortho_dict[orthography])):
                 new_str = new_str.replace(ortho_dict[orthography][i], ortho_dict[key][i])
 
-            if key == orthography:
-                output += f"*{key}: {new_str}*\n"
-            else:
-                output += f"{key}: {new_str}\n"
-
-    return output.strip()
+            output[key] = new_str
+            
+    return output
 
 def main():
     parser = argparse.ArgumentParser(description='')
@@ -63,6 +61,7 @@ def main():
     # print (get_unique_chars(ortho_dict))
 
     # print (get_orthography(args.string, get_unique_chars(ortho_dict)))
+
 
     print(convert_orthography(args.string, ortho_dict))
     

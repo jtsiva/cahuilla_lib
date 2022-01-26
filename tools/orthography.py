@@ -45,8 +45,9 @@ class Orthography():
         for key in self.orthography_dict:
             new_str = text
             if len(self.orthography_dict[orthography]) == len(self.orthography_dict[key]):
-                for i in range(len(self.orthography_dict[orthography])):
-                    new_str = new_str.replace(self.orthography_dict[orthography][i], self.orthography_dict[key][i])
+                for char in sorted(self.orthography_dict[orthography], key=len, reverse=True):
+                    char_index = self.orthography_dict[orthography].index(char)
+                    new_str = new_str.replace(self.orthography_dict[orthography][char_index], self.orthography_dict[key][char_index])
 
                 output["converted"][key] = new_str
                 

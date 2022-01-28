@@ -1,8 +1,51 @@
 [
   {
-    "file": "",
-    "title": "",
-    "author": [],
-    "year": 0
+    "ref": "saubel1981chem",
+    "title": "Chem'ivillu'(let's Speak Cahuilla)",
+    "author": ["Saubel, Katherine Siva", "Munro, Pamela"],
+    "year": "1981",
+    "publisher": "American Indian Studies Center, UCLA"
+  },
+  {
+    "ref": "seiler1979cah",
+    "title": "Cahuilla Dictionary",
+    "author": ["Seiler, Hansjakob", "Hioki, Kojiro "],
+    "year": "1979",
+    "publisher": "Malki Museum Press"
+  },
+  {
+    "ref": "seiler1977cah",
+    "title": "Cahuilla Grammar",
+    "author": ["Seiler, Hansjakob"],
+    "year": "1977",
+    "publisher": "Malki Museum Press"
+  },
+  {
+    "ref": "saubel1977iisn",
+    "title": "I'Isniyatam (designs): A Cahuilla word book",
+    "author": ["Saubel, Katherine Siva"],
+    "year": "1977",
+    "publisher": "Malki-Ballena Press"
+  },
+  {
+    "ref": "lowell1972temal",
+    "title": "Temalpakh: Cahuilla Indian Knowledge and Usage of Plants",
+    "author": ["John Bean, Lowell", "Saubel, Katherine Siva"],
+    "year": "1972",
+    "publisher": "Malki Museum Press"
+  },
+  {
+    "ref": "madrigal2021corr",
+    "title": "Personal Correspondence",
+    "author": ["Madrigal, William"],
+    "year": "2020-2021",
+    "publisher": ""
+  },
+  {
+    "ref": "huaute2014havun",
+    "title": "Havun Chem'ivilyuna!",
+    "author": ["Huaute, Raymond"],
+    "year": "2014",
+    "publisher": "University of California Riverside"
   }
 ]

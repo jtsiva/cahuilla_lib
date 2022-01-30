@@ -2,7 +2,7 @@
 
 The purpose of this repository is to assemble many disparate resources on Cahuilla language and culture into one digital collection. The primary focus of this repository is on the language (both the mountain and desert dialects), but cultural material will be included where relevent or desired.
 
-##Library outline
+## Library outline
 
 - resources: includes an index of source materials and includes links to those materials where possible
 - words: various word lists organized by source given in the orthography of the source

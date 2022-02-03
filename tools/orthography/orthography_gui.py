@@ -22,7 +22,7 @@ class MainWindow():
         self.convert_button.pack(side = RIGHT)
         
         self.ortho_dict = {}
-        with open ('../sounds/orthography.json') as file:
+        with open ('../../sounds/orthography.json') as file:
             self.ortho_dict = json.load(file)
 
         for ortho_name, chars in self.ortho_dict.items():

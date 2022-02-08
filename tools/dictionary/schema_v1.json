@@ -1,0 +1,8 @@
+{
+  "cahuilla": "cahuilla",
+  "english": ["english"],
+  "pos": ["part of speech"],
+  "origin": "mtn | dst | common | alt | ?",
+  "pronunciation": "relative/path/to/file.mp3",
+  "notes": ["this", "that", "and the other"]
+}

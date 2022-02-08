@@ -1,4 +1,5 @@
 #!/bin/python3
+import json
 
 class ManagedEntry ():
     """
@@ -38,3 +39,16 @@ class ManagedEntry ():
             self._entry[key] = value
         else:
             raise KeyError("Key is not editable or doesn't exist")
+
+    @classmethod
+    def from_file(cls, file_name, editable):
+        """
+        Create object by taking a file name. File should contain a sort of schema with needd keys and default values.
+
+        file_name - name of file from which to load
+        editable - whether the object is editable by default
+        """
+        with open (file_name) as file:
+            entry = json.load(file)
+
+        return cls(entry, editable)

@@ -13,7 +13,7 @@ def main():
 
     args = parser.parse_args()
 
-    ortho = orthography.Orthography('../sounds/orthography.json')
+    ortho = orthography.Orthography('../../sounds/orthography.json')
 
 
 

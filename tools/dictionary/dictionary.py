@@ -1,5 +1,8 @@
 #!/bin/python3
-from ..util.managed_entry import ManagedEntry
+import os.path
+from whoosh.fields import Schema, ID, KEYWORD, TEXT
+from whoosh.index import create_in, open_dir
+from cahuilla_library_tools.util.managed_entry import ManagedEntry
 
 class Dictionary():
     def __init__(self, schema_file, word_list):
@@ -11,9 +14,50 @@ class Dictionary():
         """
         self._schema_file = schema_file
         self._entries = []
+        self.index = None
+        self.schema = None
 
         for json_entry in word_list:
             self._entries.append(ManagedEntry(json_entry, False))
+
+    def load (self):
+        """
+        Load raw word list and create searchable index. If index
+        already exists then it is recreated.
+        """
+
+        #create Whoosh schema. Based on schema_v2
+        self.schema = Schema(cahuilla=ID(stored=True),
+                english=KEYWORD(stored=True, commas=True),
+                pos=KEYWORD(commas=True),
+                origin=ID(),
+                related=KEYWORD(commas=True),
+                tags=KEYWORD(commas=True),
+                source=ID(),
+                notes=TEXT(),
+                id=ID())
+
+        #create and populate index if it doesn't exist, load otherwise
+        if not os.path.exists("index"):
+            os.mkdir("index")
+            self.index = create_in("index", self.schema)
+            writer = self.index.writer()
+            for entry in self._entries:
+                writer.add_document(cahuilla=entry['cahuilla'],
+                english=",".join(entry['english']),
+                pos=",".join(entry['pos']),
+                origin=entry['origin'],
+                related=",".join(entry['related']),
+                tags=",".join(entry['tags']),
+                source=entry['source'],
+                notes="\n".join(entry['notes']),
+                id=entry['id'])
+
+            writer.commit()
+        else:
+            self.index = open_dir("index")
+
+        
 
     def lookup(self, search_term):
         """

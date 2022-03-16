@@ -1,24 +1,31 @@
 #!/bin/python3
 import os.path
+import json
 from whoosh.fields import Schema, ID, KEYWORD, TEXT
 from whoosh.index import create_in, open_dir
-from cahuilla_library_tools.util.managed_entry import ManagedEntry
+import util
+from util.managed_entry import ManagedEntry
 
 class Dictionary():
-    def __init__(self, schema_file, word_list):
+    def __init__(self, schema_file, word_list_file):
         """
         Load words conforming to schema
 
         schema_file - file name with json object outlining keys
-        word_list - list of json objects with word data
+        word_list_file - file with list of json objects with word data
         """
         self._schema_file = schema_file
         self._entries = []
         self.index = None
         self.schema = None
 
-        for json_entry in word_list:
-            self._entries.append(ManagedEntry(json_entry, False))
+        with open(schema_file) as file:
+            self.schema = json.load(file)
+
+        with open(word_list_file) as file:
+            word_list = json.load(file)
+            for json_entry in word_list:
+                self._entries.append(ManagedEntry(json_entry, False))
 
     def load (self):
         """

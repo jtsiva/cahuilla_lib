@@ -3,7 +3,6 @@ import os.path
 import json
 from whoosh.fields import Schema, ID, KEYWORD, TEXT
 from whoosh.index import create_in, open_dir
-import util
 from util.managed_entry import ManagedEntry
 
 class Dictionary():

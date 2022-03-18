@@ -3,7 +3,18 @@ from dictionary.dictionary import Dictionary
 import argparse
 
 def main():
+    parser = argparse.ArgumentParser(description='look up entries in the dictionary based on the default Whoosh query langauge')
+
+    parser.add_argument('search_term', type=str,
+                    help='Search term to use for searching the dictionary')
+
+    args = parser.parse_args()
+
     cah_dict = Dictionary("dictionary/schema_v2.json", "../words/dict.json")
+
+    cah_dict.load()
+
+    print(cah_dict.lookup(args.search_term))
 
     print ('done')
 

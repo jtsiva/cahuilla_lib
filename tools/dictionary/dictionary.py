@@ -3,6 +3,7 @@ import os.path
 import json
 from whoosh.fields import Schema, ID, KEYWORD, TEXT
 from whoosh.index import create_in, open_dir
+from whoosh.qparser import QueryParser
 from util.managed_entry import ManagedEntry
 
 class Dictionary():
@@ -71,6 +72,12 @@ class Dictionary():
         match the term
         """
         return_words = None
+
+        qp = QueryParser("cahuilla", schema=self.index.schema)
+        q = qp.parse(search_term)
+
+        with self.index.searcher() as s:
+            return_words = s.search(q, limit=10)
 
         return return_words
 

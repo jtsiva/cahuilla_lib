@@ -3,7 +3,7 @@ import os.path
 import json
 from whoosh.fields import Schema, ID, KEYWORD, TEXT
 from whoosh.index import create_in, open_dir
-from whoosh.qparser import QueryParser
+from whoosh.qparser import MultifieldParser
 from util.managed_entry import ManagedEntry
 
 class Dictionary():
@@ -36,13 +36,13 @@ class Dictionary():
         #create Whoosh schema. Based on schema_v2
         self.schema = Schema(cahuilla=ID(stored=True),
                 english=KEYWORD(stored=True, commas=True),
-                pos=KEYWORD(commas=True),
-                origin=ID(),
-                related=KEYWORD(commas=True),
-                tags=KEYWORD(commas=True),
-                source=ID(),
-                notes=TEXT(),
-                id=ID())
+                pos=KEYWORD(stored=True,commas=True),
+                origin=ID(stored=True,),
+                related=KEYWORD(stored=True,commas=True),
+                tags=KEYWORD(stored=True,commas=True),
+                source=ID(stored=True,),
+                notes=TEXT(stored=True,),
+                id=ID(stored=True))
 
         #create and populate index if it doesn't exist, load otherwise
         if not os.path.exists("index"):
@@ -69,17 +69,32 @@ class Dictionary():
     def lookup(self, search_term):
         """
         Use the search term to return a list of words that best
-        match the term
+        match the term. Returns abbreviated entry
         """
-        return_words = None
+        return_words = []
 
-        qp = QueryParser("cahuilla", schema=self.index.schema)
-        q = qp.parse(search_term)
+        query_parser = MultifieldParser(["cahuilla", "english", "pos", "origin", "tags", "source", "notes"], schema=self.index.schema)
+        query = query_parser.parse(search_term)
 
-        with self.index.searcher() as s:
-            return_words = s.search(q, limit=10)
+        with self.index.searcher() as searcher:
+            for hit in searcher.search(query, limit=10):
+                return_words.append(hit.fields())
+
 
         return return_words
+
+    def get(self, id):
+        """
+        Get a specific entry from the dictionary by ID
+        """
+        result = None
+        with self.index.searcher() as searcher:
+            result = searcher.document(id=id)
+            print(result)
+
+        return result
+
+        
 
     def edit (self, field, value):
         """

@@ -18,20 +18,18 @@ class Dictionary():
         self._entries = []
         self.index = None
         self.schema = None
+        self.word_list_file = word_list_file
 
         with open(schema_file) as file:
             self.schema = json.load(file)
 
-        with open(word_list_file) as file:
-            word_list = json.load(file)
-            for json_entry in word_list:
-                self._entries.append(ManagedEntry(json_entry, False))
 
     def load (self):
         """
         Load raw word list and create searchable index. If index
         already exists then it is recreated.
         """
+        
 
         #create Whoosh schema. Based on schema_v2
         self.schema = Schema(cahuilla=ID(stored=True),
@@ -49,22 +47,31 @@ class Dictionary():
             os.mkdir("index")
             self.index = create_in("index", self.schema)
             writer = self.index.writer()
-            for entry in self._entries:
-                writer.add_document(cahuilla=entry['cahuilla'],
-                english=",".join(entry['english']),
-                pos=",".join(entry['pos']),
-                origin=entry['origin'],
-                related=",".join(entry['related']),
-                tags=",".join(entry['tags']),
-                source=entry['source'],
-                notes="\n".join(entry['notes']),
-                id=entry['id'])
+            with open(self.word_list_file) as file:
+                word_list = json.load(file)
+                for entry in word_list: 
+                    writer.add_document(cahuilla=entry['cahuilla'],
+                    english=",".join(entry['english']),
+                    pos=",".join(entry['pos']),
+                    origin=entry['origin'],
+                    related=",".join(entry['related']),
+                    tags=",".join(entry['tags']),
+                    source=entry['source'],
+                    notes="\n".join(entry['notes']),
+                    id=entry['id'])
 
             writer.commit()
         else:
             self.index = open_dir("index")
 
-        
+    def reload (self):
+        """
+        Delete index and regenerate
+        """
+        if os.path.exists("index"):
+            os.rmdir("index")
+
+        self.load()    
 
     def lookup(self, search_term):
         """
@@ -85,15 +92,17 @@ class Dictionary():
 
     def get(self, id):
         """
-        Get a specific entry from the dictionary by ID
+        Get a specific ManagedEntry from the dictionary by ID
         """
         result = None
-        with self.index.searcher() as searcher:
-            result = searcher.document(id=id)
+
+        with open(self.word_list_file) as file:
+            word_list = json.load(file)
+            for entry in word_list:
+                if id in entry.values():
+                    result = ManagedEntry(entry, False)
 
         return result
-
-        
 
     def edit (self, field, value):
         """

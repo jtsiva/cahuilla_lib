@@ -40,6 +40,12 @@ class ManagedEntry ():
         else:
             raise KeyError("Key is not editable or doesn't exist")
 
+    def __repr__ (self):
+        return self._entry
+
+    def __str__(self):
+        return str(self._entry)
+
     @classmethod
     def from_file(cls, file_name, editable):
         """

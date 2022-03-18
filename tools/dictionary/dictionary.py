@@ -90,7 +90,6 @@ class Dictionary():
         result = None
         with self.index.searcher() as searcher:
             result = searcher.document(id=id)
-            print(result)
 
         return result
 

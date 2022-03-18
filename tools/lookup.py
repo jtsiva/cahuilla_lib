@@ -14,9 +14,13 @@ def main():
 
     cah_dict.load()
 
-    print(cah_dict.lookup(args.search_term))
+    results = cah_dict.lookup(args.search_term)
+    for hit in results:
+        print("- {}\n".format(hit))
 
-    print ('done')
+    
+
+    print ('top result: {}'.format(cah_dict.get(results[0]['id'])) )
 
 if __name__ == "__main__":
     main()

@@ -130,22 +130,12 @@ class Dictionary():
         with open(self.word_list_file) as file:
             word_list = json.load(file)
 
-            #loop through to find highest id
-            
-            for entry in word_list:
-                if int(entry['id'].split('_')[1]) > highest_id:
-                    highest_id = int(entry['id'].split('_')[1])
-
-            highest_id += 1
-            logging.debug("Next ID is: {}".format(highest_id))
             #now loop through again to update
             i = 0
             while i < len(word_list):
                 entry = word_list[i]
                 for updated in self._edited_entries:
                     if updated['id'] in entry.values():
-                        updated['id'] = updated['id'].split('_')[0] + '_' + str(highest_id)
-                        highest_id += 1
                         
                         logging.debug("Updating {} to {}".format(entry, updated))
                         word_list[i] = updated.__dict__()
@@ -155,7 +145,7 @@ class Dictionary():
 
         #write to file
         with open (self.word_list_file, 'w') as file:
-            json.dump(word_list, file)
+            json.dump(word_list, file, indent=2)
 
         #clear list of pending edits
         self._edited_entries.clear()
@@ -174,6 +164,19 @@ class Dictionary():
         Add a word to the dictionary. All data expected by schema
         should be provided
         """
+        #loop through to find highest id
+        highest_id = 0
+        word_list = None
+
+        #findest highest id so that we know our new id
+        with open(self.word_list_file) as file:
+            word_list = json.load(file)
+            for entry in word_list:
+                if int(entry['id'].split('_')[1]) > highest_id:
+                    highest_id = int(entry['id'].split('_')[1])
+
+        highest_id += 1
+        logging.debug("Next ID is: {}".format(highest_id))
         pass
 
     def delete(self, entry_id):

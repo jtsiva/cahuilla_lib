@@ -1,6 +1,7 @@
 #!/bin/python3
 import os.path
 import json
+import sys, logging
 from whoosh.fields import Schema, ID, KEYWORD, TEXT
 from whoosh.index import create_in, open_dir
 from whoosh.qparser import MultifieldParser
@@ -44,6 +45,7 @@ class Dictionary():
 
         #create and populate index if it doesn't exist, load otherwise
         if not os.path.exists("index"):
+            logging.debug("Index doesn't exist. Creating...")
             os.mkdir("index")
             self.index = create_in("index", self.schema)
             writer = self.index.writer()
@@ -62,6 +64,7 @@ class Dictionary():
 
             writer.commit()
         else:
+            logging.debug("Loading index")
             self.index = open_dir("index")
 
     def _reload (self):
@@ -84,7 +87,7 @@ class Dictionary():
         query = query_parser.parse(search_term)
 
         with self.index.searcher() as searcher:
-            for hit in searcher.search(query, limit=10):
+            for hit in searcher.search(query, limit=None):
                 return_words.append(hit.fields())
 
 
@@ -126,10 +129,13 @@ class Dictionary():
             word_list = json.load(file)
 
             #loop through to find highest id
+            
             for entry in word_list:
                 if int(entry['id'].split('_')[1]) > highest_id:
                     highest_id = int(entry['id'].split('_')[1])
 
+            highest_id += 1
+            logging.debug("Next ID is: %s".format(highest_id))
             #now loop through again to update
             i = 0
             while i < len(word_list):
@@ -138,8 +144,9 @@ class Dictionary():
                     if updated['id'] in entry.values():
                         updated['id'] = updated['id'].split('_')[0] + highest_id
                         highest_id += 1
-
-                word_list[i] = updated
+                        
+                        logging.debug("Updating %s to %s".format(entry, updated))
+                        word_list[i] = updated
 
                 i += 1
             #

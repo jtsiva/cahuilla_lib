@@ -15,7 +15,7 @@ class Dictionary():
         word_list_file - file with list of json objects with word data
         """
         self._schema_file = schema_file
-        self._entries = []
+        self._edited_entries = []
         self.index = None
         self.schema = None
         self.word_list_file = word_list_file
@@ -49,7 +49,7 @@ class Dictionary():
             writer = self.index.writer()
             with open(self.word_list_file) as file:
                 word_list = json.load(file)
-                for entry in word_list: 
+                for entry in word_list:
                     writer.add_document(cahuilla=entry['cahuilla'],
                     english=",".join(entry['english']),
                     pos=",".join(entry['pos']),
@@ -64,14 +64,14 @@ class Dictionary():
         else:
             self.index = open_dir("index")
 
-    def reload (self):
+    def _reload (self):
         """
         Delete index and regenerate
         """
         if os.path.exists("index"):
             os.rmdir("index")
 
-        self.load()    
+        self.load() 
 
     def lookup(self, search_term):
         """
@@ -90,7 +90,7 @@ class Dictionary():
 
         return return_words
 
-    def get(self, id):
+    def get(self, id, editable=False):
         """
         Get a specific ManagedEntry from the dictionary by ID
         """
@@ -100,15 +100,58 @@ class Dictionary():
             word_list = json.load(file)
             for entry in word_list:
                 if id in entry.values():
-                    result = ManagedEntry(entry, False)
+                    result = ManagedEntry(entry, editable)
 
         return result
 
-    def edit (self, field, value):
+    def update (self, updated_entry):
         """
-        Flag or suggest edit
+        Provide updated entry to dictionary. Will not replace current
+        entry until save() is called
+
+        updated_entry - update version of entry provided by get()
         """
-        pass
+        self._edited_entries.append(updated_entry)
+
+    def save (self):
+        """
+        Write edited dictionary entries to dictionary json and update
+        index
+        """
+        highest_id = 0
+        word_list = None
+
+        #update local copy of dictionary
+        with open(self.word_list_file) as file:
+            word_list = json.load(file)
+
+            #loop through to find highest id
+            for entry in word_list:
+                if int(entry['id'].split('_')[1]) > highest_id:
+                    highest_id = int(entry['id'].split('_')[1])
+
+            #now loop through again to update
+            i = 0
+            while i < len(word_list):
+                entry = word_list[i]
+                for updated in self._edited_entries:
+                    if updated['id'] in entry.values():
+                        updated['id'] = updated['id'].split('_')[0] + highest_id
+                        highest_id += 1
+
+                word_list[i] = updated
+
+                i += 1
+            #
+
+        #write to file
+        json.dump(word_list, self.word_list_file)
+
+        #clear list of pending edits
+        self._edited_entries.clear()
+
+        #reload index
+        self._reload()
 
     def get_usage (self, word):
         """

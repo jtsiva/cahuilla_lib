@@ -43,6 +43,9 @@ class ManagedEntry ():
     def __repr__ (self):
         return self._entry
 
+    def __dict__  (self):
+        return self._entry
+
     def __str__(self):
         return str(self._entry)
 

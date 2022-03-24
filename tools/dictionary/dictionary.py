@@ -1,7 +1,9 @@
 #!/bin/python3
 import os.path
 import json
-import sys, logging
+import sys
+import logging
+import shutil
 from whoosh.fields import Schema, ID, KEYWORD, TEXT
 from whoosh.index import create_in, open_dir
 from whoosh.qparser import MultifieldParser
@@ -72,7 +74,7 @@ class Dictionary():
         Delete index and regenerate
         """
         if os.path.exists("index"):
-            os.rmdir("index")
+            shutil.rmtree("index")
 
         self.load() 
 
@@ -135,24 +137,25 @@ class Dictionary():
                     highest_id = int(entry['id'].split('_')[1])
 
             highest_id += 1
-            logging.debug("Next ID is: %s".format(highest_id))
+            logging.debug("Next ID is: {}".format(highest_id))
             #now loop through again to update
             i = 0
             while i < len(word_list):
                 entry = word_list[i]
                 for updated in self._edited_entries:
                     if updated['id'] in entry.values():
-                        updated['id'] = updated['id'].split('_')[0] + highest_id
+                        updated['id'] = updated['id'].split('_')[0] + '_' + str(highest_id)
                         highest_id += 1
                         
-                        logging.debug("Updating %s to %s".format(entry, updated))
-                        word_list[i] = updated
+                        logging.debug("Updating {} to {}".format(entry, updated))
+                        word_list[i] = updated.__dict__()
 
                 i += 1
             #
 
         #write to file
-        json.dump(word_list, self.word_list_file)
+        with open (self.word_list_file, 'w') as file:
+            json.dump(word_list, file)
 
         #clear list of pending edits
         self._edited_entries.clear()

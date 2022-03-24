@@ -22,7 +22,7 @@ def main():
 
     # get
 
-    entry = cah_dict.get(args.id)
+    entry = cah_dict.get(args.id, editable=True)
 
     entry[args.key] = args.value
 

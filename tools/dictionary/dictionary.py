@@ -10,6 +10,13 @@ from whoosh.qparser import MultifieldParser
 from util.managed_entry import ManagedEntry
 
 class Dictionary():
+    """
+    Dictionary object to manage viewing and editing lists of words with associated data
+
+    TODO: 
+        - lookups and edits only operate on committed entries
+        - divide save operations between update, add, and delete
+    """
     def __init__(self, schema_file, word_list_file):
         """
         Load words conforming to schema
@@ -18,7 +25,7 @@ class Dictionary():
         word_list_file - file with list of json objects with word data
         """
         self._schema_file = schema_file
-        self._edited_entries = []
+        self._updated_entries = []
         self.index = None
         self.schema = None
         self.word_list_file = word_list_file
@@ -116,30 +123,42 @@ class Dictionary():
 
         updated_entry - update version of entry provided by get()
         """
-        self._edited_entries.append(updated_entry)
+        self._updated_entries.append(("edit", updated_entry))
 
     def save (self):
         """
         Write edited dictionary entries to dictionary json and update
         index
         """
-        highest_id = 0
         word_list = None
 
-        #update local copy of dictionary
         with open(self.word_list_file) as file:
             word_list = json.load(file)
 
-            #now loop through again to update
+            #check if we need to add entries to the dictionary
+            for entry in self._updated_entries:
+                if "add" == entry[0]:
+                    word_list.append(entry[1].__dict__())
+
+            to_delete = []
+           
             i = 0
+            #step through dictionary
             while i < len(word_list):
                 entry = word_list[i]
-                for updated in self._edited_entries:
-                    if updated['id'] in entry.values():
+                #loop through update list
+                for updated in self._updated_entries:
+                    #check if the dictionary entry needs updates
+                    if updated[1]['id'] in entry.values():
                         
-                        logging.debug("Updating {} to {}".format(entry, updated))
-                        word_list[i] = updated.__dict__()
-
+                        #check if we are editing or deleting the entry
+                        if "edit" == updated[0]:
+                            logging.debug("Updating {} to {}".format(entry, updated))
+                            word_list[i] = updated[1].__dict__()
+                        elif "delete" == updated[0]:
+                            #add index to delete list
+                            to_delete.append(i)
+                #
                 i += 1
             #
 
@@ -148,22 +167,17 @@ class Dictionary():
             json.dump(word_list, file, indent=2)
 
         #clear list of pending edits
-        self._edited_entries.clear()
+        self._updated_entries.clear()
 
         #reload index
         self._reload()
-
-    def get_usage (self, word):
-        """
-        Return a list of examples where the word is used
-        """
-        pass
 
     def add(self, entry_data):
         """
         Add a word to the dictionary. All data expected by schema
         should be provided
         """
+
         #loop through to find highest id
         highest_id = 0
         word_list = None
@@ -177,14 +191,35 @@ class Dictionary():
 
         highest_id += 1
         logging.debug("Next ID is: {}".format(highest_id))
-        pass
+
+        #make sure that the new data doesn't unexpected keys
+        new_entry = ManagedEntry.from_file(self._schema_file, True)
+        for key in entry_data:
+            if key in new_entry:
+                new_entry[key] = entry_data[key]
+            else:
+                return False
+
+
+        new_entry['id'] = highest_id
+        logging.debug("Adding new entry: {}".format(new_entry.__dict__()))
+        highest_id += 1
+        self._updated_entries.append(("add", new_entry))
+
+        return True
 
     def delete(self, entry_id):
         """
-        Remove an entry by ID
+        Remove an entry by ID. Takes effect on save
+        """
+        logging.debug("Deleting: {}".format(entry_id))
+        self._updated_entries.append(("delete", {'id':entry_id}))
+
+    def get_usage (self, word):
+        """
+        Return a list of examples where the word is used
         """
         pass
-
 
 
 

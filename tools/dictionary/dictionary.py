@@ -208,7 +208,7 @@ class Dictionary():
                 return False
 
 
-        new_entry['id'] = highest_id
+        new_entry['id'] = new_entry['id'] + str(highest_id)
         logging.debug("Adding new entry: {}".format(new_entry))
         highest_id += 1
         self._updated_entries.append(("add", new_entry))

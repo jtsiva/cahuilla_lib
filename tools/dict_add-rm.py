@@ -23,7 +23,7 @@ def main():
     if 'add' in args.command:
         new_entry = json.loads(args.argument)
         #must have a cahuilla word at a minimum
-        if 'cahuilla' in new_entry and len(new_entry['cahuilla'] > 0):
+        if 'cahuilla' in new_entry and len(new_entry['cahuilla']) > 0:
             results = cah_dict.lookup("cahuilla:" + new_entry['cahuilla'])
 
             #there is a perfect match
@@ -34,31 +34,28 @@ def main():
                 result = cah_dict.add(new_entry)
                 if result:
                     print ("Added: {}".format(new_entry))
+                    #save
+                    cah_dict.save()
                 else:
                     print ("Failed. Check that data conforms to schema.")
         #add
     elif 'rm' in args.command:
         id_to_delete = args.argument
+        entry = cah_dict.get(id_to_delete)
+
+        ans = input ("{}\nAre you sure you want to delete this entry?  (y/n)".format(entry))
+        if 'y' in ans:
+            cah_dict.delete(id_to_delete)
+            print("Deleted!")
+            #save
+            cah_dict.save()
+        else:
+            print("Aborted")
     else:
         return
 
+
     
-
-    # get
-
-    entry = cah_dict.get(args.id, editable=True)
-
-    if type(entry[args.key]) is list:
-        entry[args.key] = args.value.split(',')
-    else:
-        entry[args.key] = args.value
-
-    #update
-
-    cah_dict.update(entry)
-
-    #save
-    cah_dict.save()
 
 if __name__ == "__main__":
     main()

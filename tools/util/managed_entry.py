@@ -1,14 +1,15 @@
 #!/bin/python3
 import json
+from collections.abc import MutableMapping
 
-class ManagedEntry ():
+class ManagedEntry (MutableMapping):
     """
     Provides a dictionary that can be made readonly and doesn't allow
     additional keys upon creation
     """
 
     #protected
-    _entry = None #python dictionary containing related fields
+    _editable = False
     
     def __init__ (self, entry, editable):
         """
@@ -41,7 +42,7 @@ class ManagedEntry ():
             raise KeyError("Key is not editable or doesn't exist")
 
     def __repr__ (self):
-        return self._entry
+        return str(self._entry)
 
     def __dict__  (self):
         return self._entry

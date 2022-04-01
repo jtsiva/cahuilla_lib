@@ -7,7 +7,6 @@ import shutil
 from whoosh.fields import Schema, ID, KEYWORD, TEXT
 from whoosh.index import create_in, open_dir
 from whoosh.qparser import MultifieldParser
-from util.managed_entry import ManagedEntry
 
 class Dictionary():
     """
@@ -104,7 +103,7 @@ class Dictionary():
 
     def get(self, id, editable=False):
         """
-        Get a specific ManagedEntry from the dictionary by ID
+        Get a specific entry from the dictionary by ID
         """
         result = None
 
@@ -112,7 +111,7 @@ class Dictionary():
             word_list = json.load(file)
             for entry in word_list:
                 if id in entry.values():
-                    result = ManagedEntry(entry, editable)
+                    result = entry
 
         return result
 
@@ -138,7 +137,7 @@ class Dictionary():
             #check if we need to add entries to the dictionary
             for entry in self._updated_entries:
                 if "add" == entry[0]:
-                    word_list.append(entry[1].__dict__)
+                    word_list.append(entry[1])
 
             to_delete = []
            
@@ -153,8 +152,8 @@ class Dictionary():
                         
                         #check if we are editing or deleting the entry
                         if "edit" == updated[0]:
-                            logging.debug("Updating {} to {}".format(entry, updated))
-                            word_list[i] = updated[1].__dict__
+                            logging.debug("Updating {} to {}".format(entry, updated[1]))
+                            word_list[i] = updated[1]
                         elif "delete" == updated[0]:
                             #add index to delete list
                             to_delete.append(i)
@@ -192,8 +191,12 @@ class Dictionary():
         highest_id += 1
         logging.debug("Next ID is: {}".format(highest_id))
 
+        
+        #get dictionary entry template
+        with open(self._schema_file) as file:
+            new_entry = json.load(file)
+
         #make sure that the new data doesn't unexpected keys
-        new_entry = ManagedEntry.from_file(self._schema_file, True)
         for key in entry_data:
             if key in new_entry:
                 new_entry[key] = entry_data[key]
@@ -202,7 +205,7 @@ class Dictionary():
 
 
         new_entry['id'] = highest_id
-        logging.debug("Adding new entry: {}".format(new_entry.__dict__))
+        logging.debug("Adding new entry: {}".format(new_entry))
         highest_id += 1
         self._updated_entries.append(("add", new_entry))
 

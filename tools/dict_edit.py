@@ -24,7 +24,10 @@ def main():
 
     entry = cah_dict.get(args.id, editable=True)
 
-    entry[args.key] = args.value
+    if type(entry[args.key]) is list:
+        entry[args.key] = args.value.split(',')
+    else:
+        entry[args.key] = args.value
 
     #update
 

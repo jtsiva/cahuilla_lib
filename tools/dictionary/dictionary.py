@@ -161,6 +161,10 @@ class Dictionary():
                 i += 1
             #
 
+        #actually carry out deletion
+        for i in to_delete:
+            del word_list[i]
+
         #write to file
         with open (self.word_list_file, 'w') as file:
             json.dump(word_list, file, indent=2)

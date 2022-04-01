@@ -1,7 +1,9 @@
 #!/bin/python3
+"""
+Dictionary object for working with many python dicts
+"""
 import os.path
 import json
-import sys
 import logging
 import shutil
 from whoosh.fields import Schema, ID, KEYWORD, TEXT
@@ -11,10 +13,6 @@ from whoosh.qparser import MultifieldParser
 class Dictionary():
     """
     Dictionary object to manage viewing and editing lists of words with associated data
-
-    TODO: 
-        - lookups and edits only operate on committed entries
-        - divide save operations between update, add, and delete
     """
     def __init__(self, schema_file, word_list_file):
         """
@@ -152,7 +150,7 @@ class Dictionary():
                         
                         #check if we are editing or deleting the entry
                         if "edit" == updated[0]:
-                            logging.debug("Updating {} to {}".format(entry, updated[1]))
+                            logging.debug(f"Updating {entry} to {updated[1]}")
                             word_list[i] = updated[1]
                         elif "delete" == updated[0]:
                             #add index to delete list
@@ -193,7 +191,7 @@ class Dictionary():
                     highest_id = int(entry['id'].split('_')[1])
 
         highest_id += 1
-        logging.debug("Next ID is: {}".format(highest_id))
+        logging.debug(f"Next ID is: {highest_id}")
 
         
         #get dictionary entry template
@@ -209,7 +207,7 @@ class Dictionary():
 
 
         new_entry['id'] = new_entry['id'] + str(highest_id)
-        logging.debug("Adding new entry: {}".format(new_entry))
+        logging.debug(f"Adding new entry: {new_entry}")
         highest_id += 1
         self._updated_entries.append(("add", new_entry))
 
@@ -219,7 +217,7 @@ class Dictionary():
         """
         Remove an entry by ID. Takes effect on save
         """
-        logging.debug("Deleting: {}".format(entry_id))
+        logging.debug(f"Deleting: {entry_id}")
         self._updated_entries.append(("delete", {'id':entry_id}))
 
     def get_usage (self, word):

@@ -19,9 +19,9 @@ def main():
         print ("No results!")
     else:
         for hit in results:
-            print("- {}\n".format(hit))
+            print(f"- {hit}\n")
 
-        print ('top result: {}'.format(cah_dict.get(results[0]['id'])) )
+        print (f"top result: {cah_dict.get(results[0]['id'])}")
 
 if __name__ == "__main__":
     main()

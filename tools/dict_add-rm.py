@@ -28,12 +28,12 @@ def main():
 
             #there is a perfect match
             if len(results) == 1:
-                print("Entry already exists!\n*{}".format(results[0]))
+                print(f"Entry already exists!\n*{results[0]}")
             else:
                 print ("Adding...")
                 result = cah_dict.add(new_entry)
                 if result:
-                    print ("Added: {}".format(new_entry))
+                    print (f"Added: {new_entry}")
                     #save
                     cah_dict.save()
                 else:
@@ -43,7 +43,7 @@ def main():
         id_to_delete = args.argument
         entry = cah_dict.get(id_to_delete)
 
-        ans = input ("{}\nAre you sure you want to delete this entry?  (y/n)".format(entry))
+        ans = input (f"{entry}\nAre you sure you want to delete this entry?  (y/n)")
         if 'y' in ans:
             cah_dict.delete(id_to_delete)
             print("Deleted!")

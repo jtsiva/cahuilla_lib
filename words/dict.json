@@ -1,0 +1,3759 @@
+[
+  {
+    "cahuilla": "miyaxwen",
+    "english": [
+      "hello",
+      "to be in a state",
+      "to somehow exist"
+    ],
+    "pos": [
+      "interjection"
+    ],
+    "origin": "dst",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings",
+      "feelings"
+    ],
+    "id": "v2_1"
+  },
+  {
+    "cahuilla": "miyaxwe",
+    "english": [
+      "hello",
+      "to be in a state",
+      "to somehow exist"
+    ],
+    "pos": [
+      "interjection"
+    ],
+    "origin": "mtn",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "Madrigal",
+      "found in various other sources"
+    ],
+    "id": "v2_2"
+  },
+  {
+    "cahuilla": "men miyaxwen",
+    "english": [
+      "hello back"
+    ],
+    "pos": [
+      "interjection"
+    ],
+    "origin": "?",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings"
+    ],
+    "id": "v2_3"
+  },
+  {
+    "cahuilla": "hicha?",
+    "english": [
+      "what?"
+    ],
+    "pos": [
+      "question"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings",
+      "questions"
+    ],
+    "id": "v2_4"
+  },
+  {
+    "cahuilla": "ne",
+    "english": [
+      "I",
+      "my"
+    ],
+    "pos": [
+      "pronoun",
+      "possessive pronoun",
+      "prefix"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings",
+      "can appear alone or as prefix",
+      "whose things"
+    ],
+    "id": "v2_5"
+  },
+  {
+    "cahuilla": "'e'",
+    "english": [
+      "you"
+    ],
+    "pos": [
+      "pronoun",
+      "prefix"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings",
+      "can appear alone or as prefix"
+    ],
+    "id": "v2_6"
+  },
+  {
+    "cahuilla": "e",
+    "english": [
+      "your"
+    ],
+    "pos": [
+      "possessive pronoun",
+      "prefix"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_7"
+  },
+  {
+    "cahuilla": "tew",
+    "english": [
+      "to name"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings",
+      "needs prefix to indicate object"
+    ],
+    "id": "v2_8"
+  },
+  {
+    "cahuilla": "mivaxvish",
+    "english": [
+      "to be from"
+    ],
+    "pos": [
+      "verb",
+      "question"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings",
+      "needs prefix to indicate object"
+    ],
+    "id": "v2_9"
+  },
+  {
+    "cahuilla": "ne'",
+    "english": "I",
+    "pos": [
+      "pronoun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings"
+    ],
+    "id": "v2_10"
+  },
+  {
+    "cahuilla": "'e'",
+    "english": [
+      "you"
+    ],
+    "pos": [
+      "pronoun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings"
+    ],
+    "id": "v2_11"
+  },
+  {
+    "cahuilla": "hen-",
+    "english": [
+      "to be"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings",
+      "prefix"
+    ],
+    "id": "v2_12"
+  },
+  {
+    "cahuilla": "-ngax",
+    "english": [
+      "from"
+    ],
+    "pos": [
+      ""
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings",
+      "suffix"
+    ],
+    "id": "v2_13"
+  },
+  {
+    "cahuilla": "Paypa",
+    "english": [
+      "later (not today)"
+    ],
+    "pos": [
+      "interjection"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings"
+    ],
+    "id": "v2_14"
+  },
+  {
+    "cahuilla": "Mawa'",
+    "english": [
+      "later (today)"
+    ],
+    "pos": [
+      "interjection"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings"
+    ],
+    "id": "v2_15"
+  },
+  {
+    "cahuilla": "enteewnem",
+    "english": [
+      "I will see you"
+    ],
+    "pos": [
+      "phrase",
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings",
+      "paired with 'Paypa' and 'Mawa' '"
+    ],
+    "id": "v2_16"
+  },
+  {
+    "cahuilla": "Malki",
+    "english": [
+      "Morongo Cahuilla Indian Reservation"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings"
+    ],
+    "id": "v2_17"
+  },
+  {
+    "cahuilla": "Sexi",
+    "english": [
+      "Agua Caliente/Palm Springs Cahuilla"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings"
+    ],
+    "id": "v2_18"
+  },
+  {
+    "cahuilla": "kawiiya",
+    "english": [
+      "Cahuilla"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings"
+    ],
+    "id": "v2_19"
+  },
+  {
+    "cahuilla": "tamika",
+    "english": [
+      "Torres Martinez",
+      "East",
+      "desert"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings"
+    ],
+    "id": "v2_20"
+  },
+  {
+    "cahuilla": "haa",
+    "english": [
+      "okay"
+    ],
+    "pos": [
+      "interjection"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings"
+    ],
+    "id": "v2_21"
+  },
+  {
+    "cahuilla": "pen",
+    "english": [
+      "and"
+    ],
+    "pos": [
+      "conjunction"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings"
+    ],
+    "id": "v2_22"
+  },
+  {
+    "cahuilla": "Achama",
+    "english": [
+      "Good",
+      "Thank you",
+      "fine"
+    ],
+    "pos": [
+      "adjective",
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "greetings",
+      "feelings"
+    ],
+    "id": "v2_23"
+  },
+  {
+    "cahuilla": "miyaxwenipa",
+    "english": [
+      "why?"
+    ],
+    "pos": [
+      "question"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "feelings"
+    ],
+    "id": "v2_24"
+  },
+  {
+    "cahuilla": "pish",
+    "english": [
+      "that"
+    ],
+    "pos": [
+      "conjunction"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "feelings"
+    ],
+    "id": "v2_25"
+  },
+  {
+    "cahuilla": "mexive",
+    "english": [
+      "to feel",
+      "to be (feeling)"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "feelings"
+    ],
+    "id": "v2_26"
+  },
+  {
+    "cahuilla": "sunema",
+    "english": [
+      "sad"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "feelings"
+    ],
+    "id": "v2_27"
+  },
+  {
+    "cahuilla": "sun chayqal",
+    "english": [
+      "happy"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "feelings"
+    ],
+    "id": "v2_28"
+  },
+  {
+    "cahuilla": "he\u00f1uqal",
+    "english": [
+      "angry"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "feelings"
+    ],
+    "id": "v2_29"
+  },
+  {
+    "cahuilla": "ivax",
+    "english": [
+      "now",
+      "today"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "feelings"
+    ],
+    "id": "v2_30"
+  },
+  {
+    "cahuilla": "tess",
+    "english": [
+      "also"
+    ],
+    "pos": [
+      "adverb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "feelings"
+    ],
+    "id": "v2_31"
+  },
+  {
+    "cahuilla": "pe'acham",
+    "english": [
+      "that's good"
+    ],
+    "pos": [
+      "phrase"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "feelings"
+    ],
+    "id": "v2_32"
+  },
+  {
+    "cahuilla": "heehe",
+    "english": [
+      "yes"
+    ],
+    "pos": [
+      "interjection"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "feelings",
+      "drinks"
+    ],
+    "id": "v2_33"
+  },
+  {
+    "cahuilla": "haxi?",
+    "english": [
+      "who?"
+    ],
+    "pos": [
+      "question"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "questions"
+    ],
+    "id": "v2_34"
+  },
+  {
+    "cahuilla": "mipa?",
+    "english": [
+      "when?"
+    ],
+    "pos": [
+      "question"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "questions"
+    ],
+    "id": "v2_35"
+  },
+  {
+    "cahuilla": "miva?",
+    "english": [
+      "where?"
+    ],
+    "pos": [
+      "question"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "questions"
+    ],
+    "id": "v2_36"
+  },
+  {
+    "cahuilla": "mik?",
+    "english": [
+      "how many?"
+    ],
+    "pos": [
+      "question"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "questions"
+    ],
+    "id": "v2_37"
+  },
+  {
+    "cahuilla": "chepev?",
+    "english": [
+      "Is that true?",
+      "That is true (w/o question mark)"
+    ],
+    "pos": [
+      "question",
+      "statement"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "questions"
+    ],
+    "id": "v2_38"
+  },
+  {
+    "cahuilla": "tawpaki",
+    "english": [
+      "birthday"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "questions"
+    ],
+    "id": "v2_39"
+  },
+  {
+    "cahuilla": "ivi",
+    "english": [
+      "this"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "questions"
+    ],
+    "id": "v2_40"
+  },
+  {
+    "cahuilla": "'i'",
+    "english": [
+      "this"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "alt",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "questions"
+    ],
+    "id": "v2_41"
+  },
+  {
+    "cahuilla": "evat",
+    "english": [
+      "that"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "questions"
+    ],
+    "id": "v2_42"
+  },
+  {
+    "cahuilla": "et",
+    "english": [
+      "that"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "alt",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "questions"
+    ],
+    "id": "v2_43"
+  },
+  {
+    "cahuilla": "kewet",
+    "english": [
+      "party",
+      "celebration"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "questions"
+    ],
+    "id": "v2_44"
+  },
+  {
+    "cahuilla": "nanvayaxqal",
+    "english": [
+      "ready"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "questions"
+    ],
+    "id": "v2_45"
+  },
+  {
+    "cahuilla": "hiwqal",
+    "english": [
+      "to live here",
+      "to be here"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "questions",
+      "3rd person doesn't prefex he-"
+    ],
+    "id": "v2_46"
+  },
+  {
+    "cahuilla": "kinga",
+    "english": [
+      "at/in ___ house"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "questions",
+      "at posessor's housej"
+    ],
+    "id": "v2_47"
+  },
+  {
+    "cahuilla": "pulive",
+    "english": [
+      "to be born",
+      "to be dropped",
+      "to fall"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "questions"
+    ],
+    "id": "v2_48"
+  },
+  {
+    "cahuilla": "nichily",
+    "english": [
+      "woman"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "questions"
+    ],
+    "id": "v2_49"
+  },
+  {
+    "cahuilla": "naxanish",
+    "english": [
+      "man"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "questions"
+    ],
+    "id": "v2_50"
+  },
+  {
+    "cahuilla": "hichi",
+    "english": [
+      "to go"
+    ],
+    "pos": [
+      "action verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "questions"
+    ],
+    "id": "v2_51"
+  },
+  {
+    "cahuilla": "ki'i",
+    "english": [
+      "no"
+    ],
+    "pos": [
+      "interjection"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_52"
+  },
+  {
+    "cahuilla": "ha",
+    "english": [
+      "or"
+    ],
+    "pos": [
+      "conjunction"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_53"
+  },
+  {
+    "cahuilla": "pen",
+    "english": [
+      "I"
+    ],
+    "pos": [
+      "prefix",
+      "pronoun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_54"
+  },
+  {
+    "cahuilla": "pe",
+    "english": [
+      "you"
+    ],
+    "pos": [
+      "prefix",
+      "pronoun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_55"
+  },
+  {
+    "cahuilla": "ayawlu",
+    "english": [
+      "would like"
+    ],
+    "pos": [
+      "subjunctive",
+      ""
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_56"
+  },
+  {
+    "cahuilla": "ayawqal",
+    "english": [
+      "to want"
+    ],
+    "pos": [
+      "question"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_57"
+  },
+  {
+    "cahuilla": "yawqal",
+    "english": [
+      "to have"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_58"
+  },
+  {
+    "cahuilla": "aywik",
+    "english": [
+      "to need"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_59"
+  },
+  {
+    "cahuilla": "kaxvee",
+    "english": [
+      "coffee"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_60"
+  },
+  {
+    "cahuilla": "cha",
+    "english": [
+      "tea"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_61"
+  },
+  {
+    "cahuilla": "pal",
+    "english": [
+      "water"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_62"
+  },
+  {
+    "cahuilla": "qichily",
+    "english": [
+      "money"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_63"
+  },
+  {
+    "cahuilla": "siwma",
+    "english": [
+      "hot"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_64"
+  },
+  {
+    "cahuilla": "yuyma",
+    "english": [
+      "cold"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_65"
+  },
+  {
+    "cahuilla": "tuhaymanish",
+    "english": [
+      "always",
+      "as usual"
+    ],
+    "pos": [
+      "phrase"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_66"
+  },
+  {
+    "cahuilla": "hichami",
+    "english": [
+      "?"
+    ],
+    "pos": [
+      "?"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_67"
+  },
+  {
+    "cahuilla": "pa'pi",
+    "english": [
+      "?"
+    ],
+    "pos": [
+      "?"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_68"
+  },
+  {
+    "cahuilla": "inish",
+    "english": [
+      "?"
+    ],
+    "pos": [
+      "?"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_69"
+  },
+  {
+    "cahuilla": "pa'ka",
+    "english": [
+      "?"
+    ],
+    "pos": [
+      "?"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks"
+    ],
+    "id": "v2_70"
+  },
+  {
+    "cahuilla": "kily",
+    "english": [
+      "not"
+    ],
+    "pos": [
+      "modifier"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "true or not true"
+    ],
+    "id": "v2_71"
+  },
+  {
+    "cahuilla": "kilye",
+    "english": [
+      "not"
+    ],
+    "pos": [
+      "modifier"
+    ],
+    "origin": "alt",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "true or not true"
+    ],
+    "id": "v2_72"
+  },
+  {
+    "cahuilla": "eteewe",
+    "english": [
+      "to see"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "true or not true",
+      "unsure about verb stem"
+    ],
+    "id": "v2_73"
+  },
+  {
+    "cahuilla": "e'e'nane",
+    "english": [
+      "to know"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "true or not true"
+    ],
+    "id": "v2_74"
+  },
+  {
+    "cahuilla": "qal",
+    "english": [
+      "one thing lying down"
+    ],
+    "pos": [
+      "position"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "true or not true"
+    ],
+    "id": "v2_75"
+  },
+  {
+    "cahuilla": "wen",
+    "english": [
+      "multiple things lying down"
+    ],
+    "pos": [
+      "position"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "true or not true"
+    ],
+    "id": "v2_76"
+  },
+  {
+    "cahuilla": "hiwen",
+    "english": [
+      "standing"
+    ],
+    "pos": [
+      "position"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "true or not true"
+    ],
+    "id": "v2_77"
+  },
+  {
+    "cahuilla": "chi'awen",
+    "english": [
+      "sitting"
+    ],
+    "pos": [
+      "position"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "true or not true"
+    ],
+    "id": "v2_78"
+  },
+  {
+    "cahuilla": "eqwashmal",
+    "english": [
+      "boy"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "true or not true"
+    ],
+    "id": "v2_79"
+  },
+  {
+    "cahuilla": "nawishmal",
+    "english": [
+      "girl"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "true or not true"
+    ],
+    "id": "v2_80"
+  },
+  {
+    "cahuilla": "ki'at",
+    "english": [
+      "child"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "true or not true"
+    ],
+    "id": "v2_81"
+  },
+  {
+    "cahuilla": "awal",
+    "english": [
+      "dog"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "true or not true"
+    ],
+    "id": "v2_82"
+  },
+  {
+    "cahuilla": "ipa",
+    "english": [
+      "here"
+    ],
+    "pos": [
+      "position"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "true or not true"
+    ],
+    "id": "v2_83"
+  },
+  {
+    "cahuilla": "penga",
+    "english": [
+      "there"
+    ],
+    "pos": [
+      "position"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "true or not true"
+    ],
+    "id": "v2_84"
+  },
+  {
+    "cahuilla": "angapa",
+    "english": [
+      "again"
+    ],
+    "pos": [
+      "adverb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "true or not true"
+    ],
+    "id": "v2_85"
+  },
+  {
+    "cahuilla": "suplyi",
+    "english": [
+      "one"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_86"
+  },
+  {
+    "cahuilla": "wih",
+    "english": [
+      "two"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_87"
+  },
+  {
+    "cahuilla": "pah",
+    "english": [
+      "three"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_88"
+  },
+  {
+    "cahuilla": "wichiw",
+    "english": [
+      "four"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_89"
+  },
+  {
+    "cahuilla": "nemakwanang",
+    "english": [
+      "five"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_90"
+  },
+  {
+    "cahuilla": "kwan suplyi",
+    "english": [
+      "six"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_91"
+  },
+  {
+    "cahuilla": "kwan wih",
+    "english": [
+      "seven"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_92"
+  },
+  {
+    "cahuilla": "kwan pah",
+    "english": [
+      "eight"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_93"
+  },
+  {
+    "cahuilla": "kwan wichiw",
+    "english": [
+      "nine"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_94"
+  },
+  {
+    "cahuilla": "nemachumi",
+    "english": [
+      "ten"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_95"
+  },
+  {
+    "cahuilla": "selnek(ish)",
+    "english": [
+      "red"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_96"
+  },
+  {
+    "cahuilla": "tulnek(ish)",
+    "english": [
+      "black"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_97"
+  },
+  {
+    "cahuilla": "tevishnek(ish)",
+    "english": [
+      "white"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_98"
+  },
+  {
+    "cahuilla": "tukwishnek(ish)",
+    "english": [
+      "blue",
+      "green"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "dst",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_99"
+  },
+  {
+    "cahuilla": "tesetnek(ish)",
+    "english": [
+      "yellow",
+      "brown"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_100"
+  },
+  {
+    "cahuilla": "amnawet",
+    "english": [
+      "big",
+      "large"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_101"
+  },
+  {
+    "cahuilla": "inishily",
+    "english": [
+      "little",
+      "small"
+    ],
+    "pos": [
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_102"
+  },
+  {
+    "cahuilla": "tuyvawenet",
+    "english": [
+      "circle"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_103"
+  },
+  {
+    "cahuilla": "pah amiwenet",
+    "english": [
+      "triangle"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_104"
+  },
+  {
+    "cahuilla": "wichiw amiwenet",
+    "english": [
+      "square"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_105"
+  },
+  {
+    "cahuilla": "willyaxwenet",
+    "english": [
+      "straight line"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_106"
+  },
+  {
+    "cahuilla": "meyiwenet",
+    "english": [
+      "curved line"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_107"
+  },
+  {
+    "cahuilla": "kwa'asni",
+    "english": [
+      "to draw"
+    ],
+    "pos": [
+      "command",
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_108"
+  },
+  {
+    "cahuilla": "kamiisa",
+    "english": [
+      "shirt"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes",
+      "whose things"
+    ],
+    "id": "v2_109"
+  },
+  {
+    "cahuilla": "paxanivel",
+    "english": [
+      "pants"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes",
+      "whose things"
+    ],
+    "id": "v2_110"
+  },
+  {
+    "cahuilla": "waqat",
+    "english": [
+      "shoes"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes",
+      "whose things"
+    ],
+    "id": "v2_111"
+  },
+  {
+    "cahuilla": "umon emem",
+    "english": [
+      "all of you"
+    ],
+    "pos": [
+      "pronoun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_112"
+  },
+  {
+    "cahuilla": "tetewan",
+    "english": [
+      "count"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_113"
+  },
+  {
+    "cahuilla": "humaywenetem",
+    "english": [
+      "colors"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_114"
+  },
+  {
+    "cahuilla": "hespen",
+    "english": [
+      "very",
+      "hard"
+    ],
+    "pos": [
+      "adjective",
+      "adverb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_115"
+  },
+  {
+    "cahuilla": "pik",
+    "english": [
+      "to",
+      "toward"
+    ],
+    "pos": [
+      "preposition"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes",
+      "comes after thing or direction"
+    ],
+    "id": "v2_116"
+  },
+  {
+    "cahuilla": "wash",
+    "english": [
+      "go ahead"
+    ],
+    "pos": [
+      "phrase"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_117"
+  },
+  {
+    "cahuilla": "nanqal",
+    "english": [
+      "to know"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes",
+      "unsure"
+    ],
+    "id": "v2_118"
+  },
+  {
+    "cahuilla": "nanal",
+    "english": [
+      "to tell"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_119"
+  },
+  {
+    "cahuilla": "Achaqun em'enan'i",
+    "english": [
+      "You have learned well"
+    ],
+    "pos": [
+      "phrase"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "numbers, colors, shapes"
+    ],
+    "id": "v2_120"
+  },
+  {
+    "cahuilla": "paxa",
+    "english": [
+      "come in"
+    ],
+    "pos": [
+      "phrase"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "drinks",
+      "come in!"
+    ],
+    "id": "v2_121"
+  },
+  {
+    "cahuilla": "nacha",
+    "english": [
+      "to sit"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_122"
+  },
+  {
+    "cahuilla": "we'we",
+    "english": [
+      "to stand",
+      "to halt"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_123"
+  },
+  {
+    "cahuilla": "nakma",
+    "english": [
+      "to listen"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_124"
+  },
+  {
+    "cahuilla": "tee",
+    "english": [
+      "too look",
+      "to watch"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_125"
+  },
+  {
+    "cahuilla": "pa'",
+    "english": [
+      "to drink"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_126"
+  },
+  {
+    "cahuilla": "kwa'a",
+    "english": [
+      "to eat (something specific"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!",
+      "doesn't conjugate"
+    ],
+    "id": "v2_127"
+  },
+  {
+    "cahuilla": "wayiki",
+    "english": [
+      "to eat"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_128"
+  },
+  {
+    "cahuilla": "teklu'",
+    "english": [
+      "to stop"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_129"
+  },
+  {
+    "cahuilla": "tekya",
+    "english": [
+      "to be still"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_130"
+  },
+  {
+    "cahuilla": "chemi",
+    "english": [
+      "to be quiet"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_131"
+  },
+  {
+    "cahuilla": "navuk",
+    "english": [
+      "to come"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_132"
+  },
+  {
+    "cahuilla": "ipika",
+    "english": [
+      "to here"
+    ],
+    "pos": [
+      "direction"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_133"
+  },
+  {
+    "cahuilla": "siyaqe",
+    "english": [
+      "to move"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_134"
+  },
+  {
+    "cahuilla": "pepuchaq",
+    "english": [
+      "to jump"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!",
+      "possibly includes subject prefix"
+    ],
+    "id": "v2_135"
+  },
+  {
+    "cahuilla": "taxma",
+    "english": [
+      "to sing"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_136"
+  },
+  {
+    "cahuilla": "chengen",
+    "english": [
+      "to dance"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_137"
+  },
+  {
+    "cahuilla": "sesem",
+    "english": [
+      "to smile",
+      "to laugh"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_138"
+  },
+  {
+    "cahuilla": "maxa",
+    "english": [
+      "to give"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_139"
+  },
+  {
+    "cahuilla": "kusa",
+    "english": [
+      "to take"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_140"
+  },
+  {
+    "cahuilla": "tav'a",
+    "english": [
+      "to put",
+      "to place"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_141"
+  },
+  {
+    "cahuilla": "peqepay",
+    "english": [
+      "to throw"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!",
+      "possibly includes subject prefix"
+    ],
+    "id": "v2_142"
+  },
+  {
+    "cahuilla": "wa'ish",
+    "english": [
+      "meat"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!"
+    ],
+    "id": "v2_143"
+  },
+  {
+    "cahuilla": "kwal",
+    "english": [
+      "?"
+    ],
+    "pos": [
+      "?"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!",
+      "unknown"
+    ],
+    "id": "v2_144"
+  },
+  {
+    "cahuilla": "emuqa",
+    "english": [
+      "?"
+    ],
+    "pos": [
+      "?"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!",
+      "unknown"
+    ],
+    "id": "v2_145"
+  },
+  {
+    "cahuilla": "metewet",
+    "english": [
+      "a lot"
+    ],
+    "pos": [
+      "adverb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "come in!",
+      "unsure"
+    ],
+    "id": "v2_146"
+  },
+  {
+    "cahuilla": "ivim",
+    "english": [
+      "these"
+    ],
+    "pos": [
+      "pronoun",
+      "plural"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those",
+      "plural of ivi"
+    ],
+    "id": "v2_147"
+  },
+  {
+    "cahuilla": "evatem",
+    "english": [
+      "those"
+    ],
+    "pos": [
+      "pronoun",
+      "plural"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those",
+      "plural of evat"
+    ],
+    "id": "v2_148"
+  },
+  {
+    "cahuilla": "mewih",
+    "english": [
+      "two (animals or people)"
+    ],
+    "pos": [
+      "pronoun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_149"
+  },
+  {
+    "cahuilla": "mepah",
+    "english": [
+      "three (animals or people)"
+    ],
+    "pos": [
+      "pronoun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_150"
+  },
+  {
+    "cahuilla": "mewichiw",
+    "english": [
+      "four (animals or people)"
+    ],
+    "pos": [
+      "pronoun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_151"
+  },
+  {
+    "cahuilla": "a'amnawet",
+    "english": [
+      "big ones"
+    ],
+    "pos": [
+      "pronoun",
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_152"
+  },
+  {
+    "cahuilla": "'i'nishmalyem",
+    "english": [
+      "small ones"
+    ],
+    "pos": [
+      "pronoun",
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_153"
+  },
+  {
+    "cahuilla": "selnekchem",
+    "english": [
+      "red ones"
+    ],
+    "pos": [
+      "pronoun",
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_154"
+  },
+  {
+    "cahuilla": "tulnekchem",
+    "english": [
+      "black ones"
+    ],
+    "pos": [
+      "pronoun",
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_155"
+  },
+  {
+    "cahuilla": "tevishnekchem",
+    "english": [
+      "white ones"
+    ],
+    "pos": [
+      "pronoun",
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_156"
+  },
+  {
+    "cahuilla": "tukwishnekchem",
+    "english": [
+      "blue ones",
+      "green ones"
+    ],
+    "pos": [
+      "pronoun",
+      "adjective"
+    ],
+    "origin": "dst",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_157"
+  },
+  {
+    "cahuilla": "tesnekchem",
+    "english": [
+      "yellow ones",
+      "brown ones"
+    ],
+    "pos": [
+      "pronoun",
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_158"
+  },
+  {
+    "cahuilla": "wavu'chem",
+    "english": [
+      "tall ones"
+    ],
+    "pos": [
+      "pronoun",
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_159"
+  },
+  {
+    "cahuilla": "he'achem",
+    "english": [
+      "pets"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_160"
+  },
+  {
+    "cahuilla": "'a'walem",
+    "english": [
+      "dogs"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_161"
+  },
+  {
+    "cahuilla": "wikimalyem",
+    "english": [
+      "birds"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_162"
+  },
+  {
+    "cahuilla": "gaatu'um",
+    "english": [
+      "cats"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_163"
+  },
+  {
+    "cahuilla": "kiyulem",
+    "english": [
+      "fish (plural)"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "dst",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_164"
+  },
+  {
+    "cahuilla": "pasuktam",
+    "english": [
+      "horses"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_165"
+  },
+  {
+    "cahuilla": "mingkim",
+    "english": [
+      "relatives"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_166"
+  },
+  {
+    "cahuilla": "ewaxalyem",
+    "english": [
+      "younger sisters"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_167"
+  },
+  {
+    "cahuilla": "eqisem",
+    "english": [
+      "older sisters"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_168"
+  },
+  {
+    "cahuilla": "eyuulyem",
+    "english": [
+      "younger brothers"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_169"
+  },
+  {
+    "cahuilla": "epasem",
+    "english": [
+      "older brothers"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_170"
+  },
+  {
+    "cahuilla": "emaylyam",
+    "english": [
+      "babies",
+      "children"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_171"
+  },
+  {
+    "cahuilla": "kikitam",
+    "english": [
+      "children"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_172"
+  },
+  {
+    "cahuilla": "metechem",
+    "english": [
+      "many (animals or people)"
+    ],
+    "pos": [
+      "pronoun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_173"
+  },
+  {
+    "cahuilla": "hemtew",
+    "english": [
+      "their names"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_174"
+  },
+  {
+    "cahuilla": "chemtew",
+    "english": [
+      "our names"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_175"
+  },
+  {
+    "cahuilla": "emtew",
+    "english": [
+      "your guys' names"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_176"
+  },
+  {
+    "cahuilla": "melkichem",
+    "english": [
+      "Whites",
+      "Americans",
+      "Europeans"
+    ],
+    "pos": [
+      "pronoun",
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_177"
+  },
+  {
+    "cahuilla": "tulyikchem",
+    "english": [
+      "African Americans"
+    ],
+    "pos": [
+      "pronoun",
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_178"
+  },
+  {
+    "cahuilla": "chi'achem",
+    "english": [
+      "Hispanics",
+      "Mexicans"
+    ],
+    "pos": [
+      "pronoun",
+      "adjective"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_179"
+  },
+  {
+    "cahuilla": "ipa'hemqal",
+    "english": [
+      "are here (people or animals)"
+    ],
+    "pos": [
+      "positional phrase"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_180"
+  },
+  {
+    "cahuilla": "penga'hemqal",
+    "english": [
+      "are there (people or animals)"
+    ],
+    "pos": [
+      "positional phrase"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_181"
+  },
+  {
+    "cahuilla": "et'elelqwish",
+    "english": [
+      "you're bad"
+    ],
+    "pos": [
+      "phrase"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "these and those"
+    ],
+    "id": "v2_182"
+  },
+  {
+    "cahuilla": "he",
+    "english": [
+      "his",
+      "hers",
+      "its"
+    ],
+    "pos": [
+      "pronoun",
+      "prefix"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_183"
+  },
+  {
+    "cahuilla": "hem",
+    "english": [
+      "their"
+    ],
+    "pos": [
+      "possessive pronoun",
+      "prefix"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_184"
+  },
+  {
+    "cahuilla": "chem",
+    "english": [
+      "our"
+    ],
+    "pos": [
+      "possessive pronoun",
+      "prefix"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_185"
+  },
+  {
+    "cahuilla": "em",
+    "english": [
+      "your guys'"
+    ],
+    "pos": [
+      "possessive pronoun",
+      "prefix"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_186"
+  },
+  {
+    "cahuilla": "mexana",
+    "english": [
+      "one's possessions"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_187"
+  },
+  {
+    "cahuilla": "wayismal",
+    "english": [
+      "plate"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_188"
+  },
+  {
+    "cahuilla": "tapa'mal",
+    "english": [
+      "bowl"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_189"
+  },
+  {
+    "cahuilla": "kava'mal",
+    "english": [
+      "cup"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_190"
+  },
+  {
+    "cahuilla": "tukvash",
+    "english": [
+      "knife"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_191"
+  },
+  {
+    "cahuilla": "salsalawet",
+    "english": [
+      "fork"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_192"
+  },
+  {
+    "cahuilla": "kuchaara",
+    "english": [
+      "spoon"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_193"
+  },
+  {
+    "cahuilla": "yumuvel",
+    "english": [
+      "hat"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_194"
+  },
+  {
+    "cahuilla": "meedes",
+    "english": [
+      "socks"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_195"
+  },
+  {
+    "cahuilla": "elat",
+    "english": [
+      "dress"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_196"
+  },
+  {
+    "cahuilla": "xelyal",
+    "english": [
+      "clothes"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_197"
+  },
+  {
+    "cahuilla": "yulaka",
+    "english": [
+      "hair",
+      "head"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things",
+      "unsure"
+    ],
+    "id": "v2_198"
+  },
+  {
+    "cahuilla": "push",
+    "english": [
+      "eyes",
+      "face"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things",
+      "unsure"
+    ],
+    "id": "v2_199"
+  },
+  {
+    "cahuilla": "qichily",
+    "english": [
+      "money"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_200"
+  },
+  {
+    "cahuilla": "kish",
+    "english": [
+      "house"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_201"
+  },
+  {
+    "cahuilla": "wayikiwenet",
+    "english": [
+      "food"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_202"
+  },
+  {
+    "cahuilla": "hivi",
+    "english": [
+      "to take (more than 1)",
+      "to pick up (more than 1)"
+    ],
+    "pos": [
+      "verb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_203"
+  },
+  {
+    "cahuilla": "ne mama",
+    "english": [
+      "my mom (affectionate)"
+    ],
+    "pos": [
+      "noun",
+      "possessive"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_204"
+  },
+  {
+    "cahuilla": "temanga",
+    "english": [
+      "on the ground"
+    ],
+    "pos": [
+      "position"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_205"
+  },
+  {
+    "cahuilla": "exely'a",
+    "english": [
+      "?"
+    ],
+    "pos": [
+      "?"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_206"
+  },
+  {
+    "cahuilla": "waqish",
+    "english": [
+      "?"
+    ],
+    "pos": [
+      "?"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "huaute2014havun",
+    "notes": [
+      "whose things"
+    ],
+    "id": "v2_207"
+  },
+  {
+    "cahuilla": "pal",
+    "english": [
+      "water"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "mtn",
+    "related": [],
+    "tags": [],
+    "source": "saubel1977iisn",
+    "notes": [
+      "nature"
+    ],
+    "id": "v2_208"
+  },
+  {
+    "cahuilla": "pal moomat",
+    "english": [
+      "water ocean",
+      "ocean"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "mtn",
+    "related": [],
+    "tags": [],
+    "source": "saubel1977iisn",
+    "notes": [
+      "nature"
+    ],
+    "id": "v2_209"
+  },
+  {
+    "cahuilla": "sasaymal",
+    "english": [
+      "duck"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "mtn",
+    "related": [],
+    "tags": [],
+    "source": "saubel1977iisn",
+    "notes": [
+      "animal"
+    ],
+    "id": "v2_210"
+  },
+  {
+    "cahuilla": "la'la",
+    "english": [
+      "goose"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "mtn",
+    "related": [],
+    "tags": [],
+    "source": "saubel1977iisn",
+    "notes": [
+      "animal"
+    ],
+    "id": "v2_211"
+  },
+  {
+    "cahuilla": "sukat",
+    "english": [
+      "deer"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "mtn",
+    "related": [],
+    "tags": [],
+    "source": "saubel1977iisn",
+    "notes": [
+      "animal"
+    ],
+    "id": "v2_212"
+  },
+  {
+    "cahuilla": "pasukat",
+    "english": [
+      "water deer",
+      "elk",
+      "horse"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "mtn",
+    "related": [],
+    "tags": [],
+    "source": "saubel1977iisn",
+    "notes": [
+      "animal"
+    ],
+    "id": "v2_213"
+  },
+  {
+    "cahuilla": "hunwet",
+    "english": [
+      "bear"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "saubel1977iisn",
+    "notes": [
+      "animal"
+    ],
+    "id": "v2_214"
+  },
+  {
+    "cahuilla": "xwal'xwal",
+    "english": [
+      "spider"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "mtn",
+    "related": [],
+    "tags": [],
+    "source": "saubel1977iisn",
+    "notes": [
+      "animal"
+    ],
+    "id": "v2_215"
+  }
+]

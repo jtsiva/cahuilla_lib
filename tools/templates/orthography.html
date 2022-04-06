@@ -16,10 +16,22 @@
         <button type="submit" class="btn btn-primary">Convert</button>
     </div>
 
-    <div class="form-group">
-        <label for="output">Output</label>
-        <textarea name="output" placeholder="converted text"
-                  class="form-control">{{ text }}</textarea>
-    </div>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Orthography Source</th>
+            <th>Conversion</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for key, value in text['converted'].items() %}
+         <tr>
+             <td> {{ key }} </td>
+             <td> {{ value }} </td>
+         </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
 </form>
 {% endblock %}

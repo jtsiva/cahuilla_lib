@@ -3,7 +3,7 @@
 from tkinter import *
 import json
 from functools import partial
-import ortho_diff
+import orthography
 
 class MainWindow():
     def __init__(self):
@@ -20,12 +20,11 @@ class MainWindow():
 
         self.convert_button = Button(self.input_output_frame, text = '>>>', command=self.convert_orthography)
         self.convert_button.pack(side = RIGHT)
-        
-        self.ortho_dict = {}
-        with open ('../../sounds/orthography.json') as file:
-            self.ortho_dict = json.load(file)
 
-        for ortho_name, chars in self.ortho_dict.items():
+        self.ortho = orthography.Orthography('../../sounds/orthography.json')
+        
+
+        for ortho_name, chars in self.ortho.orthography_dict.items():
             self.create_orthography_buttons(self.root, ortho_name.split('_')[0], chars)
 
     def update_input_text(self, char):
@@ -45,7 +44,7 @@ class MainWindow():
     def convert_orthography(self):
         self.output_text.configure(state=NORMAL)
         self.output_text.delete("1.0", END)
-        self.output_text.insert(END, ortho_diff.convert_orthography(self.input_text.get("1.0",END).strip(), self.ortho_dict))
+        self.output_text.insert(END, self.ortho.convert_orthography(self.input_text.get("1.0",END).strip()))
         self.output_text.configure(state=DISABLED)
 
     def run(self):

@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% block content %}
+<h1>
+  {% block title %} Welcome to the Cahuilla Orthography Converter Tool {%
+  endblock %}
+</h1>
+<form method="post">
+    <div class="form-group">
+        <label for="Input">Input</label>
+        <input type="text" name="input"
+               placeholder="Stuff to be converted" class="form-control"
+               value="{{ request.form['input'] }}"></input>
+
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Convert</button>
+    </div>
+    {% if 'converted' in text %}
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Orthography Source</th>
+                <th>Conversion</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for key, value in text['converted'].items() %}
+            <tr>
+                <td> {{ key }} </td>
+                <td> {{ value }} </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+
+</form>
+{% endblock %}

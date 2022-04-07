@@ -20,3 +20,14 @@ def orthography():
         return render_template('orthography.html', text=text)
     elif request.method == 'GET':
         return render_template('orthography.html', text=text)
+
+@app.route('/dictionary', methods=['GET', 'POST'])
+def dictionary():
+    
+    # if request.method == 'POST':
+    #     text = ortho.convert_orthography(request.form['input'].strip())
+    #     return render_template('orthography.html', text=text)
+    # elif request.method == 'GET':
+    #     return render_template('orthography.html', text=text)
+
+    return render_template('dictionary.html')

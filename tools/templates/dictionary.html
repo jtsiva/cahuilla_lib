@@ -4,17 +4,16 @@
   endblock %}
 </h1>
 <form method="post">
-    <div class="form-group">
-        <label for="Search">Search query</label>
+    <div class="input-group">
         <input type="text" name="input"
                placeholder="what to search" class="form-control"
                value="{{ request.form['input'] }}"></input>
-
+        <div class="input-group-append">
+                <button type="submit" class="btn btn-primary">Search</button>
+        </div>
     </div>
 
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary">Search</button>
-    </div>
+    
 
     <h2>
         Results

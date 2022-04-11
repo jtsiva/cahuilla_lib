@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 <h1>
-  {% block title %} Welcome to the Cahuilla Online Dictionary {%
+  {% block title %} Cahuilla Online Dictionary {%
   endblock %}
 </h1>
 <form method="post">
@@ -15,24 +15,28 @@
     <div class="form-group">
         <button type="submit" class="btn btn-primary">Search</button>
     </div>
-    {% if 'converted' in text %}
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>Orthography Source</th>
-                <th>Conversion</th>
-            </tr>
-            </thead>
-            <tbody>
-            {% for key, value in text['converted'].items() %}
-            <tr>
-                <td> {{ key }} </td>
-                <td> {{ value }} </td>
-            </tr>
-            {% endfor %}
-            </tbody>
-        </table>
-    {% endif %}
+
+    <h2>
+        Results
+    </h2>
+    
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Cahuilla</th>
+            <th>English</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for entry in results%}
+        <tr>
+            <td> {{ entry['cahuilla'] }} </td>
+            <td> {{ entry['english'] }} </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+   
 
 </form>
 {% endblock %}

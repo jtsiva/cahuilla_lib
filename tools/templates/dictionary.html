@@ -14,23 +14,22 @@
     </div>
 
     
-
-    <h2>
-        Results
-    </h2>
     
     <table class="table table-striped">
         <thead>
         <tr>
-            <th>Cahuilla</th>
-            <th>English</th>
+            <th><h2>'Ívillu'at</h2></th>
+            
         </tr>
         </thead>
         <tbody>
         {% for entry in results%}
         <tr>
-            <td> {{ entry['cahuilla'] }} </td>
-            <td> {{ entry['english'] }} </td>
+            <td>
+                <h3>{{ entry['cahuilla'] }}</h3>
+                <ul><i>{{ entry['origin'] }}, {{ entry['pos'] }}</i> </ul>
+                <ul><b>{{ entry['english'] }}</b></ul>
+            </td>
         </tr>
         {% endfor %}
         </tbody>

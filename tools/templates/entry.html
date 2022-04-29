@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% block content %}
+<header>
+    <h1>
+        {% block title %} entry['cahuilla'] {%
+        endblock %}
+      </h1>
+    <span><a class="btn" href="#"><i class="icon-edit"></i> Edit</a></span>
+</header>
+    <ul><i>{{ entry['origin'] }}, {{ entry['pos'] }}</i> 
+</ul>
+    <ul><b>{{ entry['english'] }}</b></ul>
+    <ul>Tags: 
+        {%for tag in entry['tags'] %}
+            {{tag  }}
+        {% endfor %}
+    </ul>
+
+
+</form>
+{% endblock %}

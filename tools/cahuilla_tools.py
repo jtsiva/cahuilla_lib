@@ -32,3 +32,11 @@ def dictionary():
         results = cahuilla_dict.lookup(request.form['input'].strip())
 
     return render_template('dictionary.html', results=results)
+
+@app.route('/dictionary/<string:entry_id>/')
+def dictionary_entry(entry_id):
+    cahuilla_dict = Dictionary("dictionary/schema_v2.json", "../words/dict.json")
+
+    cahuilla_dict.load()
+    entry = cahuilla_dict.get(entry_id)
+    return render_template('entry.html', entry=entry)

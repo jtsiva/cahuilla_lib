@@ -15,12 +15,29 @@
         {{part}}
     {%endfor%}
 </ul>
-    <ul><b>{{ entry['english'] }}</b></ul>
-    <ul>Tags: 
-        {%for tag in entry['tags'] %}
-            {{tag  }}
-        {% endfor %}
-    </ul>
+<ul><u>Translation:</u>
+    {% for eng in entry['english'] %}
+    <b>{{ eng }}</b>
+    {%endfor%}
+</ul>
+<ul><u>Tags:</u> 
+    {%for tag in entry['tags'] %}
+        {{tag  }}
+    {% endfor %}
+</ul>
+<ul><u>Source:</u> 
+    {{entry["source"] }}
+</ul>
+<ul><u>Related:</u> 
+    {%for related in entry['related'] %}
+        {{related  }}
+    {% endfor %}
+</ul>
+<ul><u>Notes:</u> 
+    {%for note in entry['notes'] %}
+        {{note  }}
+    {% endfor %}
+</ul>
 
 
 </form>

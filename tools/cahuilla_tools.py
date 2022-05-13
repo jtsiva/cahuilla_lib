@@ -1,6 +1,6 @@
 #!/bin/python3
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash, redirect, url_for
 from orthography.orthography import Orthography
 from dictionary.dictionary import Dictionary
 
@@ -40,3 +40,26 @@ def dictionary_entry(entry_id):
     cahuilla_dict.load()
     entry = cahuilla_dict.get(entry_id)
     return render_template('entry.html', entry=entry)
+
+@app.route('/dictionary/<string:entry_id>/edit')
+def edit_dictionary_entry(entry_id):
+    cahuilla_dict = Dictionary("dictionary/schema_v2.json", "../words/dict.json")
+
+    cahuilla_dict.load()
+    entry = cahuilla_dict.get(entry_id)
+
+    if request.method == 'POST':
+        cahuilla = request.form['cahuilla']
+        entry = request.form['entry']
+
+        if not cahuilla:
+            flash("You need to enter a word in the Cahuilla field!")
+        else:
+            cahuilla_dict.update(entry)
+
+            #save
+            cahuilla_dict.save()
+            return redirect(url_for('dictionary_entry'))
+
+
+    return render_template('edit_entry.html', entry=entry)

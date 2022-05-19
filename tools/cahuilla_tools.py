@@ -45,7 +45,8 @@ def dictionary_entry(entry_id):
 def edit_dictionary_entry(entry_id):
     cahuilla_dict = Dictionary("dictionary/schema_v2.json", "../words/dict.json")
 
-    flash("hit")
+    #read in index for sources
+    #read in tags file
 
     cahuilla_dict.load()
     entry = cahuilla_dict.get(entry_id)

@@ -53,16 +53,19 @@ def edit_dictionary_entry(entry_id):
 
     if request.method == 'POST':
         cahuilla = request.form['cahuilla']
-        entry = request.form['entry']
+        # entry = request.form['entry']
 
         if not cahuilla:
             flash("You need to enter a word in the Cahuilla field!")
         else:
-            cahuilla_dict.update(entry)
+            eng_words = request.form.getlist('english')
+            print (eng_words)
 
-            #save
-            cahuilla_dict.save()
-            return redirect(url_for('dictionary_entry'))
+            # cahuilla_dict.update(entry)
+
+            # #save
+            # cahuilla_dict.save()
+            # return redirect(url_for('dictionary_entry'))
 
 
     return render_template('edit_entry.html', entry=entry)

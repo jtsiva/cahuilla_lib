@@ -61,8 +61,13 @@ def edit_dictionary_entry(entry_id):
             eng_words = request.form.getlist('english')
             if 0 == len(eng_words[-1]):
                 eng_words.pop() #remove empty entry at end
-                
+
             print (eng_words)
+
+            pos = request.form.getlist('pos')
+            if 0 == len(pos[-1]):
+                pos.pop() #remove empty entry at end
+            print (pos)
 
             # cahuilla_dict.update(entry)
 

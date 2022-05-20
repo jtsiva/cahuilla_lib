@@ -70,6 +70,23 @@
     </script>
 
     <script type="text/javascript">
+      $("#rowAdderNotes").click(function () {
+        newRowAdd =
+          '<div id="row"> <div class="input-group m-3">' +
+          '<div class="input-group-prepend">' +
+          '<button class="btn btn-primary" id="DeleteRow" type="button">' +
+          '<i class="bi bi-trash"></i>  Delete</button> </div>' +
+          '<input type="text" class="form-control m-input" name="note" placeholder="Note"> </div> </div>';
+
+        $("#newinputnotes").append(newRowAdd);
+      });
+
+      $("body").on("click", "#DeleteRow", function () {
+        $(this).parents("#row").remove();
+      });
+    </script>
+
+    <script type="text/javascript">
       $("#rowAdderSelectPos").click(function () {
         newRowAdd =
           '<div id="row"> <div class="input-group m-3">' +

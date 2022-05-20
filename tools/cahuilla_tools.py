@@ -59,6 +59,9 @@ def edit_dictionary_entry(entry_id):
             flash("You need to enter a word in the Cahuilla field!")
         else:
             eng_words = request.form.getlist('english')
+            if 0 == len(eng_words[-1]):
+                eng_words.pop() #remove empty entry at end
+                
             print (eng_words)
 
             # cahuilla_dict.update(entry)

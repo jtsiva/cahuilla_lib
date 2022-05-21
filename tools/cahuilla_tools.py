@@ -3,6 +3,7 @@
 from flask import Flask, render_template, request, flash, redirect, url_for
 from orthography.orthography import Orthography
 from dictionary.dictionary import Dictionary
+import json
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '2647c09074614974e9a936a37e2265ec'
@@ -45,8 +46,7 @@ def dictionary_entry(entry_id):
 def edit_dictionary_entry(entry_id):
     cahuilla_dict = Dictionary("dictionary/schema_v2.json", "../words/dict.json")
 
-    #read in index for sources
-    #read in tags file
+
 
     cahuilla_dict.load()
     entry = cahuilla_dict.get(entry_id)
@@ -77,3 +77,15 @@ def edit_dictionary_entry(entry_id):
 
 
     return render_template('edit_entry.html', entry=entry)
+
+@app.context_processor
+def get_resources():
+    #read in index for sources
+    #read in tags file
+    src = []
+    tag_set = []
+    with open("../resources/index.json") as file:
+        src = json.load(file)
+    with open ("../resources/tags.json") as file:
+        tag_set = json.load(file)
+    return dict(sources=src, tag_set=tag_set)

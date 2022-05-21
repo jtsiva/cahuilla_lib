@@ -1,0 +1,243 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} Edit "{{ entry['cahuilla'] }}" {% endblock %}</h1>
+
+<form method="post">
+    
+
+<div class = "col-sm-3">
+    <div class="">
+        <div class="form-group">
+            <label for="cahuilla"><b>Cahuilla</b></label>
+            <div class="input-group m-3">
+                <input type="text" name="cahuilla" placeholder="Cahuilla word"
+                    class="form-control"
+                    value="{{ request.form['cahuilla'] or entry['cahuilla'] }}">
+                </input>
+            </div>
+        </div>
+    </div>
+
+    <div id="">
+        <div class="form-group">
+            <label for="english">English</label>
+            {% for eng in entry['english'] %}
+                <div id="row">
+                    <div class="input-group m-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-primary"
+                                id="DeleteRow" type="button">
+                                <i class="bi bi-trash"></i>
+                                Delete
+                            </button>
+                        </div>
+                        <input type="text" name="english" placeholder="English word"
+                        class="form-control"
+                        value="{{ eng }}">
+                        
+                        </input>
+                    </div>
+                </div>
+
+            {%endfor%}
+
+            
+            <div id="newinput"></div>
+            <div class="input-group m-3">
+                <button id="rowAdder" type="button"
+                    class="btn btn-dark">
+                    <span class="bi bi-plus-square-dotted">
+                    </span> Add
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="">
+        <div class="form-group">
+            <label for="pos">Part of Speech</label>
+            {% for part in entry['pos'] %}
+                <div id="row">
+                    <div class="input-group m-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-primary"
+                                id="DeleteRow" type="button">
+                                <i class="bi bi-trash"></i>
+                                Delete
+                            </button>
+                        </div>
+                        <select class="form-control" name="pos" value="{{ part }}">
+                            <option disabled selected value></option>
+                            <option {% if 'verb' == part %} selected="selected"{% endif %}>verb</option>
+                            <option {% if 'noun' == part %} selected="selected"{% endif %}>noun</option>
+                            <option {% if 'interjection' == part %} selected="selected"{% endif %}>interjection</option>
+                            <option {% if 'adjective' == part %} selected="selected"{% endif %}>adjective</option>
+                            <option {% if 'pronoun' == part %} selected="selected"{% endif %}>pronoun</option>
+                            <option {% if 'adverb' == part %} selected="selected"{% endif %}>adverb</option>
+                            <option {% if 'preposition' == part %} selected="selected"{% endif %}>preposition</option>
+                        </select>
+                    </div>
+                </div>
+
+            {%endfor%}
+
+            
+            <div id="newinputselectpos"></div>
+            <div class="input-group m-3">
+                <button id="rowAdderSelectPos" type="button"
+                    class="btn btn-dark">
+                    <span class="bi bi-plus-square-dotted">
+                    </span> Add
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="row">
+        <div class="form-group">
+            <label for="origin">Origin</label>
+            <div class="input-group m-3">
+                <select class="form-control" name="origin" value="{{ request.form['origin'] or entry['origin'] }}">
+                    <option>common</option>
+                    <option>desert</option>
+                    <option>mountain</option>
+                    <option>pass</option>
+                    <option>spanish</option>
+                    <option>other</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div id="">
+        <div class="form-group">
+            <label for="tags">Tags</label>
+            {% for tag in entry['tags'] %}
+                <div id="row">
+                    <div class="input-group m-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-primary"
+                                id="DeleteRow" type="button">
+                                <i class="bi bi-trash"></i>
+                                Delete
+                            </button>
+                        </div>
+                        <select class="form-control" name="tag">
+                            {% for tag_op in tag_set %}
+                                <option disabled selected value></option>
+                                <option {% if tag_op == tag %} selected="selected"{% endif %}>{{tag_op}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+
+            {%endfor%}
+
+            
+            <div id="newinputtag"></div>
+            <div class="input-group m-3">
+                <button id="rowAdderTag" type="button"
+                    class="btn btn-dark">
+                    <span class="bi bi-plus-square-dotted">
+                    </span> Add
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="row">
+        <div class="form-group">
+            <label for="source">Source</label>
+            <input type="text" name="source" placeholder="Source"
+                   class="form-control"
+                   value="{{ request.form['source'] or entry['source'] }}">
+            </input>
+        </div>
+    </div> 
+
+    
+    <div id="">
+        <div class="form-group">
+            <label for="related">Related</label>
+            {% for rel in entry['related'] %}
+                <div id="row">
+                    <div class="input-group m-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-primary"
+                                id="DeleteRow" type="button">
+                                <i class="bi bi-trash"></i>
+                                Delete
+                            </button>
+                        </div>
+                        <input type="text" name="related" placeholder="Note"
+                        class="form-control"
+                        value="{{ rel }}">
+                        
+                        </input>
+                    </div>
+                </div>
+
+            {%endfor%}
+
+            
+            <div id="newinputrelated"></div>
+            <div class="input-group m-3">
+                <button id="rowAdderRelated" type="button"
+                    class="btn btn-dark">
+                    <span class="bi bi-plus-square-dotted">
+                    </span> Add
+                </button>
+            </div>
+        </div>
+    </div>  
+
+    <div id="">
+        <div class="form-group">
+            <label for="notes">Notes</label>
+            {% for note in entry['notes'] %}
+                <div id="row">
+                    <div class="input-group m-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-primary"
+                                id="DeleteRow" type="button">
+                                <i class="bi bi-trash"></i>
+                                Delete
+                            </button>
+                        </div>
+                        <input type="text" name="note" placeholder="Note"
+                        class="form-control"
+                        value="{{ note }}">
+                        
+                        </input>
+                    </div>
+                </div>
+
+            {%endfor%}
+
+            
+            <div id="newinputnotes"></div>
+            <div class="input-group m-3">
+                <button id="rowAdderNotes" type="button"
+                    class="btn btn-dark">
+                    <span class="bi bi-plus-square-dotted">
+                    </span> Add
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="row">
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+</div>
+
+
+    
+</form>
+<hr>
+
+{% endblock %}

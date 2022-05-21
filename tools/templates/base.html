@@ -87,6 +87,23 @@
     </script>
 
     <script type="text/javascript">
+      $("#rowAdderRelated").click(function () {
+        newRowAdd =
+          '<div id="row"> <div class="input-group m-3">' +
+          '<div class="input-group-prepend">' +
+          '<button class="btn btn-primary" id="DeleteRow" type="button">' +
+          '<i class="bi bi-trash"></i>  Delete</button> </div>' +
+          '<input type="text" class="form-control m-input" name="related" placeholder="Related"> </div> </div>';
+
+        $("#newinputrelated").append(newRowAdd);
+      });
+
+      $("body").on("click", "#DeleteRow", function () {
+        $(this).parents("#row").remove();
+      });
+    </script>
+
+    <script type="text/javascript">
       $("#rowAdderSelectPos").click(function () {
         newRowAdd =
           '<div id="row"> <div class="input-group m-3">' +
@@ -105,6 +122,33 @@
           "</select> </div> </div>";
 
         $("#newinputselectpos").append(newRowAdd);
+      });
+
+      $("body").on("click", "#DeleteRow", function () {
+        $(this).parents("#row").remove();
+      });
+    </script>
+
+    <script type="text/javascript">
+      options = '';
+      {% for tag_op in tag_set %}
+          options += '<option>' + '{{tag_op}}' + '</option>';
+      {%endfor%}
+
+      newRowAdd =
+          '<div id="row"> <div class="input-group m-3">' +
+          '<div class="input-group-prepend">' +
+          '<button class="btn btn-primary" id="DeleteRow" type="button">' +
+          '<i class="bi bi-trash"></i>  Delete</button> </div>' +
+          '<select class="form-control" name="tag">' +
+          '<option disabled selected value></option>' + options;
+
+
+          newRowAdd += "</select> </div> </div>";
+
+      $("#rowAdderTag").click(function () {
+
+        $("#newinputtag").append(newRowAdd);
       });
 
       $("body").on("click", "#DeleteRow", function () {

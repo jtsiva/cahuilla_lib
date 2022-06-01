@@ -99,12 +99,12 @@
             <label for="origin">Origin</label>
             <div class="input-group m-3">
                 <select class="form-control" name="origin" value="{{ request.form['origin'] or entry['origin'] }}">
-                    <option>common</option>
-                    <option>desert</option>
-                    <option>mountain</option>
-                    <option>pass</option>
-                    <option>spanish</option>
-                    <option>other</option>
+                    <option {% if 'common' == entry['origin'] %} selected="selected"{% endif %}>common</option>
+                    <option {% if 'desert' == entry['origin'] %} selected="selected"{% endif %}>desert</option>
+                    <option {% if 'mountain' == entry['origin'] %} selected="selected"{% endif %}>mountain</option>
+                    <option {% if 'pass' == entry['origin'] %} selected="selected"{% endif %}>pass</option>
+                    <option {% if 'spanish' == entry['origin'] %} selected="selected"{% endif %}>spanish</option>
+                    <option {% if 'other' == entry['origin'] %} selected="selected"{% endif %}>other</option>
                 </select>
             </div>
         </div>
@@ -124,8 +124,8 @@
                             </button>
                         </div>
                         <select class="form-control" name="tag">
+                            <option disabled selected value></option>
                             {% for tag_op in tag_set %}
-                                <option disabled selected value></option>
                                 <option {% if tag_op == tag %} selected="selected"{% endif %}>{{tag_op}}</option>
                             {% endfor %}
                         </select>
@@ -146,14 +146,18 @@
         </div>
     </div>
 
+    
+
 
     <div id="row">
         <div class="form-group">
             <label for="source">Source</label>
-            <input type="text" name="source" placeholder="Source"
-                   class="form-control"
-                   value="{{ request.form['source'] or entry['source'] }}">
-            </input>
+            <select class="form-control m-3" name="source">
+                <option disabled selected value></option>
+                {% for source in sources %}
+                <option {% if 'source' == entry['source'] %} selected="selected"{% endif %}>{{source}}</option>
+                {%endfor%}
+            </select>
         </div>
     </div> 
 
@@ -171,10 +175,9 @@
                                 Delete
                             </button>
                         </div>
-                        <input type="text" name="related" placeholder="Note"
-                        class="form-control"
-                        value="{{ rel }}">
-                        
+                        <input name="related">
+                        <a href="{{url_for('dictionary_entry', entry_id=rel)}}">{{ cahuilla_dict[rel]['cahuilla'] }}</a>
+                                                
                         </input>
                     </div>
                 </div>

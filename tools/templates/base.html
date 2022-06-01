@@ -130,10 +130,12 @@
     </script>
 
     <script type="text/javascript">
-      options = '';
-      {% for tag_op in tag_set %}
-          options += '<option>' + '{{tag_op}}' + '</option>';
-      {%endfor%}
+
+      $("#rowAdderTag").click(function () {
+        options = '';
+        {% for tag_op in tag_set %}
+            options += '<option>' + '{{tag_op}}' + '</option>';
+        {%endfor%}
 
       newRowAdd =
           '<div id="row"> <div class="input-group m-3">' +
@@ -145,8 +147,6 @@
 
 
           newRowAdd += "</select> </div> </div>";
-
-      $("#rowAdderTag").click(function () {
 
         $("#newinputtag").append(newRowAdd);
       });

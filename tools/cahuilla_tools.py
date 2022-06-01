@@ -44,6 +44,10 @@ def dictionary_entry(entry_id):
 
 @app.route('/dictionary/<string:entry_id>/edit', methods=['GET', 'POST'])
 def edit_dictionary_entry(entry_id):
+    """
+    Handles the edit page rendering and dictionary updates 
+    """
+
     cahuilla_dict = Dictionary("dictionary/schema_v2.json", "../words/dict.json")
 
 
@@ -62,12 +66,32 @@ def edit_dictionary_entry(entry_id):
             if 0 == len(eng_words[-1]):
                 eng_words.pop() #remove empty entry at end
 
-            print (eng_words)
+            # print (eng_words)
 
             pos = request.form.getlist('pos')
-            if 0 == len(pos[-1]):
-                pos.pop() #remove empty entry at end
-            print (pos)
+            # if 0 == len(pos[-1]):
+            #     pos.pop() #remove empty entry at end
+            # print (pos)
+
+            tags = request.form.getlist('tag')
+            # if 0 == len(tags):
+            #     tags.pop() #remove empty entry at end
+            # print (tags)
+
+            related = request.form.getlist('related')
+            # if 0 == len(related[-1]):
+            #     related.pop() #remove empty entry at end
+            # print (related)
+
+            entry['cahuilla'] = cahuilla
+            entry['english'] = eng_words
+            entry['pos'] = pos
+            entry['origin'] = request.form['origin']
+            entry['tags'] = tags
+            entry['source'] = request.form['source']
+            entry['notes'] = request.form.getlist('notes')
+
+            print (entry)
 
             # cahuilla_dict.update(entry)
 
@@ -76,7 +100,7 @@ def edit_dictionary_entry(entry_id):
             # return redirect(url_for('dictionary_entry'))
 
 
-    return render_template('edit_entry.html', entry=entry)
+    return render_template('edit_entry.html', entry=entry, cahuilla_dict=cahuilla_dict)
 
 @app.context_processor
 def get_resources():

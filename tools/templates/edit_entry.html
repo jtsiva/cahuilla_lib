@@ -155,7 +155,7 @@
             <select class="form-control m-3" name="source">
                 <option disabled selected value></option>
                 {% for source in sources %}
-                <option {% if 'source' == entry['source'] %} selected="selected"{% endif %}>{{source}}</option>
+                <option {% if source['title'] == entry['source'] %} selected="selected"{% endif %}>{{source['title']}}</option>
                 {%endfor%}
             </select>
         </div>
@@ -174,11 +174,23 @@
                                 <i class="bi bi-trash"></i>
                                 Delete
                             </button>
+                            <!--  -->
                         </div>
-                        <input name="related">
-                        <a href="{{url_for('dictionary_entry', entry_id=rel)}}">{{ cahuilla_dict[rel]['cahuilla'] }}</a>
-                                                
+                        <input name="related" class="form-control" value="{{ cahuilla_dict.get(rel)['cahuilla'] }}" readonly>
+                        
                         </input>
+                        <!-- <div >
+                            <a href="{{url_for('dictionary_entry', entry_id=rel)}}">
+                                
+                            </a>
+                        </div> -->
+
+                        
+                        
+                                                
+                            <!-- </input> -->
+                        
+                        
                     </div>
                 </div>
 

@@ -61,43 +61,24 @@ def edit_dictionary_entry(entry_id):
 
         if not cahuilla:
             flash("You need to enter a word in the Cahuilla field!")
-        else:
-            eng_words = request.form.getlist('english')
-            if 0 == len(eng_words[-1]):
-                eng_words.pop() #remove empty entry at end
-
-            # print (eng_words)
-
-            pos = request.form.getlist('pos')
-            # if 0 == len(pos[-1]):
-            #     pos.pop() #remove empty entry at end
-            # print (pos)
-
-            tags = request.form.getlist('tag')
-            # if 0 == len(tags):
-            #     tags.pop() #remove empty entry at end
-            # print (tags)
-
-            related = request.form.getlist('related')
-            # if 0 == len(related[-1]):
-            #     related.pop() #remove empty entry at end
-            # print (related)
+        else:         
 
             entry['cahuilla'] = cahuilla
-            entry['english'] = eng_words
-            entry['pos'] = pos
+            entry['english'] = eng_words = request.form.getlist('english')
+            entry['pos'] = pos = request.form.getlist('pos')
             entry['origin'] = request.form['origin']
-            entry['tags'] = tags
+            entry['tags'] = tags = request.form.getlist('tag')
             entry['source'] = request.form['source']
+            entry['related'] = request.form.getlist('related')
             entry['notes'] = request.form.getlist('notes')
 
             print (entry)
 
-            # cahuilla_dict.update(entry)
+            cahuilla_dict.update(entry)
 
-            # #save
-            # cahuilla_dict.save()
-            # return redirect(url_for('dictionary_entry'))
+            #save
+            cahuilla_dict.save()
+            return redirect(url_for('dictionary_entry', entry_id=entry_id))
 
 
     return render_template('edit_entry.html', entry=entry, cahuilla_dict=cahuilla_dict)

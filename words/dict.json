@@ -1708,7 +1708,7 @@
     "id": "v2_98"
   },
   {
-    "cahuilla": "tukwishnek(ish)",
+    "cahuilla": "t\u00fakwishnek(ish)",
     "english": [
       "blue",
       "green"
@@ -1716,13 +1716,15 @@
     "pos": [
       "adjective"
     ],
-    "origin": "dst",
-    "related": [],
-    "tags": [],
-    "source": "huaute2014havun",
-    "notes": [
-      "numbers, colors, shapes"
+    "origin": "desert",
+    "related": [
+      "tesetnek(ish)"
     ],
+    "tags": [
+      "basic"
+    ],
+    "source": "Havun Chem'ivilyuna!",
+    "notes": [],
     "id": "v2_99"
   },
   {

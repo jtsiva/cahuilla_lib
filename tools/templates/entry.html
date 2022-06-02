@@ -17,12 +17,12 @@
 </ul>
 <ul><u>Translation:</u>
     {% for eng in entry['english'] %}
-    <b>{{ eng }}</b>
+    <i>{{ loop.index|string + ") " + eng}}</i>
     {%endfor%}
 </ul>
 <ul><u>Tags:</u> 
     {%for tag in entry['tags'] %}
-        {{tag  }}
+    <span class="badge badge-primary">{{tag}}</span>
     {% endfor %}
 </ul>
 <ul><u>Source:</u> 
@@ -30,7 +30,9 @@
 </ul>
 <ul><u>Related:</u> 
     {%for related in entry['related'] %}
-        {{related  }}
+        <a href="{{url_for('dictionary_entry', entry_id=related)}}">
+            {{ cahuilla_dict.get(related)['cahuilla'] }}                    
+        </a>
     {% endfor %}
 </ul>
 <ul><u>Notes:</u> 

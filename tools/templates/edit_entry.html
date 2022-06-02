@@ -6,7 +6,7 @@
 <form method="post">
     
 
-<div class = "col-sm-3">
+<div class = "col-sm-4">
     <div class="">
         <div class="form-group">
             <label for="cahuilla"><b>Cahuilla</b></label>
@@ -176,13 +176,14 @@
                             </button>
                             <!--  -->
                         </div>
-                        <input name="related" class="form-control" value="{{ cahuilla_dict.get(rel)['cahuilla'] }}" readonly>
+                        <input name="related" class="form-control" value="{{rel}}" readonly>
+                        
+                        </input>
+                        <input name="related_conv" class="form-control" value="{{ cahuilla_dict.get(rel)['cahuilla'] }}" readonly>
                         
                         </input>
                         <!-- <div >
-                            <a href="{{url_for('dictionary_entry', entry_id=rel)}}">
-                                
-                            </a>
+                            
                         </div> -->
 
                         

@@ -40,7 +40,7 @@ def dictionary_entry(entry_id):
 
     cahuilla_dict.load()
     entry = cahuilla_dict.get(entry_id)
-    return render_template('entry.html', entry=entry)
+    return render_template('entry.html', entry=entry, cahuilla_dict=cahuilla_dict)
 
 @app.route('/dictionary/<string:entry_id>/edit', methods=['GET', 'POST'])
 def edit_dictionary_entry(entry_id):

@@ -3759,5 +3759,37 @@
       "animal"
     ],
     "id": "v2_215"
+  },
+  {
+    "cahuilla": "'\u00e1cha'e",
+    "english": [
+      "good, fine",
+      "very, well"
+    ],
+    "pos": [
+      "adjective",
+      "adverb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "Cahuilla Dictionary",
+    "notes": [],
+    "id": "v2_216"
+  },
+  {
+    "cahuilla": "'\u00e1ksa'vish",
+    "english": [
+      "the youngest person"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "Cahuilla Dictionary",
+    "notes": [],
+    "id": "v2_217"
   }
 ]

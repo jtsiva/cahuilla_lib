@@ -68,7 +68,7 @@ def edit_dictionary_entry(entry_id):
             update_items = []         
 
             entry['cahuilla'] = cahuilla
-            entry['english'] = eng_words = request.form.getlist('english')
+            entry['english'] = request.form.getlist('english')
             entry['pos'] = pos = request.form.getlist('pos')
             entry['origin'] = request.form['origin']
             entry['tags'] = tags = request.form.getlist('tag')

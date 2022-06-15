@@ -8,6 +8,9 @@ import json
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '2647c09074614974e9a936a37e2265ec'
 
+ORTHOGRAPHY_FILE = '../sounds/orthography.json'
+DICT_SCHEMA = "dictionary/schema_v2.json"
+DICT_WORDS = "../words/dict.json"
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -15,7 +18,7 @@ def index():
 
 @app.route('/orthography', methods=['GET', 'POST'])
 def orthography():
-    ortho = Orthography('../sounds/orthography.json')
+    ortho = Orthography(ORTHOGRAPHY_FILE)
     text = ""
     if request.method == 'POST':
         text = ortho.convert_orthography(request.form['input'].strip())
@@ -25,7 +28,7 @@ def orthography():
 
 @app.route('/dictionary', methods=['GET', 'POST'])
 def dictionary():
-    cahuilla_dict = Dictionary("dictionary/schema_v2.json", "../words/dict.json")
+    cahuilla_dict = Dictionary(DICT_SCHEMA, DICT_WORDS)
 
     cahuilla_dict.load()
     results = []
@@ -36,7 +39,7 @@ def dictionary():
 
 @app.route('/dictionary/<string:entry_id>/')
 def dictionary_entry(entry_id):
-    cahuilla_dict = Dictionary("dictionary/schema_v2.json", "../words/dict.json")
+    cahuilla_dict = Dictionary(DICT_SCHEMA, DICT_WORDS)
 
     cahuilla_dict.load()
     entry = cahuilla_dict.get(entry_id)
@@ -48,7 +51,7 @@ def edit_dictionary_entry(entry_id):
     Handles the edit page rendering and dictionary updates 
     """
 
-    cahuilla_dict = Dictionary("dictionary/schema_v2.json", "../words/dict.json")
+    cahuilla_dict = Dictionary(DICT_SCHEMA, DICT_WORDS)
 
 
 
@@ -109,6 +112,22 @@ def edit_dictionary_entry(entry_id):
 
 
     return render_template('edit_entry.html', entry=entry, cahuilla_dict=cahuilla_dict)
+
+@app.route('/dictionary/new_entry/')
+def new_entry():
+    """
+    Set up a new blank entry and redirect to the edit page
+    """
+    cahuilla_dict = Dictionary(DICT_SCHEMA, DICT_WORDS)
+
+    cahuilla_dict.load()
+
+    new_entry = cahuilla_dict.get_blank()
+
+    cahuilla_dict.add_prefilled(new_entry)
+    cahuilla_dict.save()
+
+    return redirect(url_for('edit_dictionary_entry', entry_id=new_entry['id']))
 
 @app.context_processor
 def get_resources():

@@ -129,6 +129,21 @@ def new_entry():
 
     return redirect(url_for('edit_dictionary_entry', entry_id=new_entry['id']))
 
+@app.route('/dictionary/<string:entry_id>/delete/', methods=['GET', 'POST'])
+def delete_entry(entry_id):
+    """
+    Confirm deletion and carry out deletion activities
+    """
+    cahuilla_dict = Dictionary(DICT_SCHEMA, DICT_WORDS)
+
+    cahuilla_dict.load()
+    entry = cahuilla_dict.get(entry_id)
+
+    if 'GET' == request.method:
+        return render_template('delete_entry.html', entry=entry)
+    elif 'POST' == request.method:
+        return redirect(url_for('dictionary'))
+
 @app.context_processor
 def get_resources():
     #read in index for sources

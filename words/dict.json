@@ -1737,9 +1737,11 @@
       "adjective"
     ],
     "origin": "common",
-    "related": [],
+    "related": [
+      "v2_99"
+    ],
     "tags": [],
-    "source": "huaute2014havun",
+    "source": "Havun Chem'ivilyuna!",
     "notes": [
       "numbers, colors, shapes"
     ],

@@ -61,7 +61,8 @@ def edit_dictionary_entry(entry_id):
 
         if not cahuilla:
             flash("You need to enter a word in the Cahuilla field!")
-        else:         
+        else:
+            update_items = []         
 
             entry['cahuilla'] = cahuilla
             entry['english'] = eng_words = request.form.getlist('english')
@@ -69,12 +70,38 @@ def edit_dictionary_entry(entry_id):
             entry['origin'] = request.form['origin']
             entry['tags'] = tags = request.form.getlist('tag')
             entry['source'] = request.form['source']
+
+            old_related = entry['related'] #save for cleaning up backlinks
             entry['related'] = request.form.getlist('related')
-            entry['notes'] = request.form.getlist('notes')
+            entry['notes'] = request.form.getlist('note')
 
             print (entry)
+            update_items.append(entry)
 
-            cahuilla_dict.update(entry)
+            #update related entries for reciprocal
+            if set(old_related) != set(entry['related']):
+
+                #go through related entries to see
+                #if there are new entries so that we can
+                #set up reciprocals
+                for item in entry['related']:
+                    if item not in old_related:
+                        fixup_entry = cahuilla_dict.get(item)
+                        fixup_entry['related'].append(entry['id'])
+                        update_items.append(fixup_entry)
+
+                #go through the old related entries to see
+                #if a related item was removed. Go fix up
+                #the reciprocal reference
+                for old_item in old_related:
+                    if old_item not in entry['related']:
+                        fixup_entry = cahuilla_dict.get(old_item)
+                        fixup_entry['related'].remove(entry['id'])
+                        update_items.append(fixup_entry)
+
+            for updated_entry in update_items:
+                print (updated_entry)
+                cahuilla_dict.update(updated_entry)
 
             #save
             cahuilla_dict.save()

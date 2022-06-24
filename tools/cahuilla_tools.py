@@ -129,7 +129,7 @@ def new_entry():
 
     return redirect(url_for('edit_dictionary_entry', entry_id=new_entry['id']))
 
-@app.route('/dictionary/<string:entry_id>/delete/', methods=['GET', 'POST'])
+@app.route('/dictionary/<string:entry_id>/delete', methods=['GET', 'POST'])
 def delete_entry(entry_id):
     """
     Confirm deletion and carry out deletion activities
@@ -142,12 +142,26 @@ def delete_entry(entry_id):
     if 'GET' == request.method:
         return render_template('delete_entry.html', entry=entry)
     elif 'POST' == request.method:
+        updated_items = []
+        for item in entry['related']:
+            fixup_entry = cahuilla_dict.get(item)
+            fixup_entry['related'].remove(entry['id'])
+            updated_items.append(fixup_entry)
+
+        for updated_entry in updated_items:
+            cahuilla_dict.update(updated_entry)
+
+        cahuilla_dict.delete(entry_id)
+
+        cahuilla_dict.save()
+
         return redirect(url_for('dictionary'))
 
 @app.context_processor
 def get_resources():
-    #read in index for sources
-    #read in tags file
+    """
+    Read in sources from the index file and the tags used for labelling words
+    """
     src = []
     tag_set = []
     with open("../resources/index.json") as file:

@@ -9,6 +9,8 @@ import shutil
 from whoosh.fields import Schema, ID, KEYWORD, TEXT
 from whoosh.index import create_in, open_dir
 from whoosh.qparser import MultifieldParser
+from whoosh.analysis import StemmingAnalyzer, CharsetFilter
+from whoosh.support.charset import accent_map
 
 class Dictionary():
     """
@@ -36,10 +38,12 @@ class Dictionary():
         Load raw word list and create searchable index. If index
         already exists then it is recreated.
         """
+
+        stem_analyzer = StemmingAnalyzer() | CharsetFilter(accent_map)
         
 
         #create Whoosh schema. Based on schema_v2
-        self.schema = Schema(cahuilla=ID(stored=True),
+        self.schema = Schema(cahuilla=ID(analyzer=stem_analyzer, stored=True),
                 english=KEYWORD(stored=True, commas=True),
                 pos=KEYWORD(stored=True,commas=True),
                 origin=ID(stored=True,),

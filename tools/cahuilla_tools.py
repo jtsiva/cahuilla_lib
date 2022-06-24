@@ -1,16 +1,26 @@
 #!/bin/python3
 
+import json
+import os
 from flask import Flask, render_template, request, flash, redirect, url_for
+from flask_dance.contrib.github import make_github_blueprint, github
+import requests
 from orthography.orthography import Orthography
 from dictionary.dictionary import Dictionary
-import json
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '2647c09074614974e9a936a37e2265ec'
+app.config["GITHUB_OAUTH_CLIENT_ID"] = os.environ.get("GITHUB_OAUTH_CLIENT_ID")
+app.config["GITHUB_OAUTH_CLIENT_SECRET"] = os.environ.get("GITHUB_OAUTH_CLIENT_SECRET")
+github_bp = make_github_blueprint()
+app.register_blueprint(github_bp, url_prefix="/login")
+
 
 ORTHOGRAPHY_FILE = '../sounds/orthography.json'
 DICT_SCHEMA = "dictionary/schema_v2.json"
 DICT_WORDS = "../words/dict.json"
+
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -50,6 +60,18 @@ def edit_dictionary_entry(entry_id):
     """
     Handles the edit page rendering and dictionary updates 
     """
+    if not github.authorized:
+        return redirect(url_for("github.login"))
+    else:
+        resp = github.get("/user")
+        print(resp.json()["login"])
+        github_resp  = requests.get("https://api.github.com/repos/jtsiva/cahuilla_lib/collaborators/" + resp.json()["login"])
+        if github_resp.status_code == 404:
+            #not authorized
+            print ("not authorized")
+            return redirect(url_for('dictionary'))
+        else:
+            print("authorized to make edits!")
 
     cahuilla_dict = Dictionary(DICT_SCHEMA, DICT_WORDS)
 
@@ -118,6 +140,19 @@ def new_entry():
     """
     Set up a new blank entry and redirect to the edit page
     """
+    if not github.authorized:
+        return redirect(url_for("github.login"))
+    else:
+        resp = github.get("/user")
+        print(resp.json()["login"])
+        github_resp  = requests.get("https://api.github.com/repos/jtsiva/cahuilla_lib/collaborators/" + resp.json()["login"])
+        if github_resp.status_code == 404:
+            #not authorized
+            print ("not authorized")
+            return redirect(url_for('dictionary'))
+        else:
+            print("authorized to make edits!")
+
     cahuilla_dict = Dictionary(DICT_SCHEMA, DICT_WORDS)
 
     cahuilla_dict.load()
@@ -134,6 +169,20 @@ def delete_entry(entry_id):
     """
     Confirm deletion and carry out deletion activities
     """
+
+    if not github.authorized:
+        return redirect(url_for("github.login"))
+    else:
+        resp = github.get("/user")
+        print(resp.json()["login"])
+        github_resp  = requests.get("https://api.github.com/repos/jtsiva/cahuilla_lib/collaborators/" + resp.json()["login"])
+        if github_resp.status_code == 404:
+            #not authorized
+            print ("not authorized")
+            return redirect(url_for('dictionary'))
+        else:
+            print("authorized to make edits!")
+
     cahuilla_dict = Dictionary(DICT_SCHEMA, DICT_WORDS)
 
     cahuilla_dict.load()

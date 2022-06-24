@@ -62,16 +62,8 @@ def edit_dictionary_entry(entry_id):
     """
     if not github.authorized:
         return redirect(url_for("github.login"))
-    else:
-        resp = github.get("/user")
-        print(resp.json()["login"])
-        github_resp  = requests.get("https://api.github.com/repos/jtsiva/cahuilla_lib/collaborators/" + resp.json()["login"])
-        if github_resp.status_code == 404:
-            #not authorized
-            print ("not authorized")
-            return redirect(url_for('dictionary'))
-        else:
-            print("authorized to make edits!")
+    elif not is_collaborator(github.get("/user").json()["login"]):
+        return redirect(url_for('dictionary'))
 
     cahuilla_dict = Dictionary(DICT_SCHEMA, DICT_WORDS)
 
@@ -142,16 +134,8 @@ def new_entry():
     """
     if not github.authorized:
         return redirect(url_for("github.login"))
-    else:
-        resp = github.get("/user")
-        print(resp.json()["login"])
-        github_resp  = requests.get("https://api.github.com/repos/jtsiva/cahuilla_lib/collaborators/" + resp.json()["login"])
-        if github_resp.status_code == 404:
-            #not authorized
-            print ("not authorized")
-            return redirect(url_for('dictionary'))
-        else:
-            print("authorized to make edits!")
+    elif not is_collaborator(github.get("/user").json()["login"]):
+        return redirect(url_for('dictionary'))
 
     cahuilla_dict = Dictionary(DICT_SCHEMA, DICT_WORDS)
 
@@ -169,19 +153,10 @@ def delete_entry(entry_id):
     """
     Confirm deletion and carry out deletion activities
     """
-
     if not github.authorized:
         return redirect(url_for("github.login"))
-    else:
-        resp = github.get("/user")
-        print(resp.json()["login"])
-        github_resp  = requests.get("https://api.github.com/repos/jtsiva/cahuilla_lib/collaborators/" + resp.json()["login"])
-        if github_resp.status_code == 404:
-            #not authorized
-            print ("not authorized")
-            return redirect(url_for('dictionary'))
-        else:
-            print("authorized to make edits!")
+    elif not is_collaborator(github.get("/user").json()["login"]):
+        return redirect(url_for('dictionary'))
 
     cahuilla_dict = Dictionary(DICT_SCHEMA, DICT_WORDS)
 
@@ -218,3 +193,13 @@ def get_resources():
     with open ("../resources/tags.json") as file:
         tag_set = json.load(file)
     return dict(sources=src, tag_set=tag_set)
+
+def is_collaborator(user):
+    """
+    Use GitHub repo to see if user wanting to make edits is
+    a collaborator
+    """
+    resp = github.get("/user")
+    print(resp.json()["login"])
+    github_resp  = requests.get("https://api.github.com/repos/jtsiva/cahuilla_lib/collaborators/" + user)
+    return github_resp.status_code != 404

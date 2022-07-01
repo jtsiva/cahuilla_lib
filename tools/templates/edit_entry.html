@@ -1,0 +1,262 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} Edit "{{ entry['cahuilla'] }}"  <a href="{{url_for('delete_entry', entry_id=entry['id'])}}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+  </svg></a>{% endblock %}</h1>
+
+<form method="post">
+    
+
+<div class = "col-sm-4">
+    <div class="">
+        <div class="form-group">
+            <label for="cahuilla"><b>Cahuilla</b></label>
+            <div class="input-group m-3">
+                <input type="text" name="cahuilla" placeholder="Cahuilla word"
+                    class="form-control"
+                    value="{{ request.form['cahuilla'] or entry['cahuilla'] }}">
+                </input>
+            </div>
+        </div>
+    </div>
+
+    <div id="">
+        <div class="form-group">
+            <label for="english">English</label>
+            {% for eng in entry['english'] %}
+                <div id="row">
+                    <div class="input-group m-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-primary"
+                                id="DeleteRow" type="button">
+                                <i class="bi bi-trash"></i>
+                                Delete
+                            </button>
+                        </div>
+                        <input type="text" name="english" placeholder="English word"
+                        class="form-control"
+                        value="{{ eng }}">
+                        
+                        </input>
+                    </div>
+                </div>
+
+            {%endfor%}
+
+            
+            <div id="newinput"></div>
+            <div class="input-group m-3">
+                <button id="rowAdder" type="button"
+                    class="btn btn-dark">
+                    <span class="bi bi-plus-square-dotted">
+                    </span> Add
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="">
+        <div class="form-group">
+            <label for="pos">Part of Speech</label>
+            {% for part in entry['pos'] %}
+                <div id="row">
+                    <div class="input-group m-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-primary"
+                                id="DeleteRow" type="button">
+                                <i class="bi bi-trash"></i>
+                                Delete
+                            </button>
+                        </div>
+                        <select class="form-control" name="pos" value="{{ part }}">
+                            <option disabled selected value></option>
+                            <option {% if 'verb' == part %} selected="selected"{% endif %}>verb</option>
+                            <option {% if 'noun' == part %} selected="selected"{% endif %}>noun</option>
+                            <option {% if 'interjection' == part %} selected="selected"{% endif %}>interjection</option>
+                            <option {% if 'adjective' == part %} selected="selected"{% endif %}>adjective</option>
+                            <option {% if 'pronoun' == part %} selected="selected"{% endif %}>pronoun</option>
+                            <option {% if 'adverb' == part %} selected="selected"{% endif %}>adverb</option>
+                            <option {% if 'preposition' == part %} selected="selected"{% endif %}>preposition</option>
+                        </select>
+                    </div>
+                </div>
+
+            {%endfor%}
+
+            
+            <div id="newinputselectpos"></div>
+            <div class="input-group m-3">
+                <button id="rowAdderSelectPos" type="button"
+                    class="btn btn-dark">
+                    <span class="bi bi-plus-square-dotted">
+                    </span> Add
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="row">
+        <div class="form-group">
+            <label for="origin">Origin</label>
+            <div class="input-group m-3">
+                <select class="form-control" name="origin" value="{{ request.form['origin'] or entry['origin'] }}">
+                    <option {% if 'common' == entry['origin'] %} selected="selected"{% endif %}>common</option>
+                    <option {% if 'desert' == entry['origin'] %} selected="selected"{% endif %}>desert</option>
+                    <option {% if 'mountain' == entry['origin'] %} selected="selected"{% endif %}>mountain</option>
+                    <option {% if 'pass' == entry['origin'] %} selected="selected"{% endif %}>pass</option>
+                    <option {% if 'spanish' == entry['origin'] %} selected="selected"{% endif %}>spanish</option>
+                    <option {% if 'other' == entry['origin'] %} selected="selected"{% endif %}>other</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div id="">
+        <div class="form-group">
+            <label for="tags">Tags</label>
+            {% for tag in entry['tags'] %}
+                <div id="row">
+                    <div class="input-group m-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-primary"
+                                id="DeleteRow" type="button">
+                                <i class="bi bi-trash"></i>
+                                Delete
+                            </button>
+                        </div>
+                        <select class="form-control" name="tag">
+                            <option disabled selected value></option>
+                            {% for tag_op in tag_set %}
+                                <option {% if tag_op == tag %} selected="selected"{% endif %}>{{tag_op}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+
+            {%endfor%}
+
+            
+            <div id="newinputtag"></div>
+            <div class="input-group m-3">
+                <button id="rowAdderTag" type="button"
+                    class="btn btn-dark">
+                    <span class="bi bi-plus-square-dotted">
+                    </span> Add
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <div id="row">
+        <div class="form-group">
+            <label for="source">Source</label>
+            <select class="form-control m-3" name="source">
+                <option disabled selected value></option>
+                {% for source in sources %}
+                <option {% if source['title'] == entry['source'] %} selected="selected"{% endif %}>{{source['title']}}</option>
+                {%endfor%}
+            </select>
+        </div>
+    </div> 
+
+    
+    <div id="">
+        <div class="form-group">
+            <label for="related">Related</label>
+            {% for rel in entry['related'] %}
+                <div id="row">
+                    <div class="input-group m-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-primary"
+                                id="DeleteRow" type="button">
+                                <i class="bi bi-trash"></i>
+                                Delete
+                            </button>
+                            <!--  -->
+                        </div>
+                        <input name="related" class="form-control" value="{{rel}}" readonly>
+                        
+                        </input>
+                        <input name="related_conv" class="form-control" value="{{ cahuilla_dict.get(rel)['cahuilla'] }}" readonly>
+                        
+                        </input>
+                        <!-- <div >
+                            
+                        </div> -->
+
+                        
+                        
+                                                
+                            <!-- </input> -->
+                        
+                        
+                    </div>
+                </div>
+
+            {%endfor%}
+
+            
+            <div id="newinputrelated"></div>
+            <div class="input-group m-3">
+                <button id="rowAdderRelated" type="button"
+                    class="btn btn-dark">
+                    <span class="bi bi-plus-square-dotted">
+                    </span> Add
+                </button>
+            </div>
+        </div>
+    </div>  
+
+    <div id="">
+        <div class="form-group">
+            <label for="notes">Notes</label>
+            {% for note in entry['notes'] %}
+                <div id="row">
+                    <div class="input-group m-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-primary"
+                                id="DeleteRow" type="button">
+                                <i class="bi bi-trash"></i>
+                                Delete
+                            </button>
+                        </div>
+                        <input type="text" name="note" placeholder="Note"
+                        class="form-control"
+                        value="{{ note }}">
+                        
+                        </input>
+                    </div>
+                </div>
+
+            {%endfor%}
+
+            
+            <div id="newinputnotes"></div>
+            <div class="input-group m-3">
+                <button id="rowAdderNotes" type="button"
+                    class="btn btn-dark">
+                    <span class="bi bi-plus-square-dotted">
+                    </span> Add
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="row">
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+</div>
+
+
+    
+</form>
+<hr>
+
+{% endblock %}

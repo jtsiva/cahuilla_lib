@@ -1708,7 +1708,7 @@
     "id": "v2_98"
   },
   {
-    "cahuilla": "tukwishnek(ish)",
+    "cahuilla": "t\u00fakwishnek(ish)",
     "english": [
       "blue",
       "green"
@@ -1716,13 +1716,15 @@
     "pos": [
       "adjective"
     ],
-    "origin": "dst",
-    "related": [],
-    "tags": [],
-    "source": "huaute2014havun",
-    "notes": [
-      "numbers, colors, shapes"
+    "origin": "desert",
+    "related": [
+      "v2_100"
     ],
+    "tags": [
+      "basic"
+    ],
+    "source": "Havun Chem'ivilyuna!",
+    "notes": [],
     "id": "v2_99"
   },
   {
@@ -1735,9 +1737,11 @@
       "adjective"
     ],
     "origin": "common",
-    "related": [],
+    "related": [
+      "v2_99"
+    ],
     "tags": [],
-    "source": "huaute2014havun",
+    "source": "Havun Chem'ivilyuna!",
     "notes": [
       "numbers, colors, shapes"
     ],
@@ -3755,5 +3759,37 @@
       "animal"
     ],
     "id": "v2_215"
+  },
+  {
+    "cahuilla": "'\u00e1cha'e",
+    "english": [
+      "good, fine",
+      "very, well"
+    ],
+    "pos": [
+      "adjective",
+      "adverb"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "Cahuilla Dictionary",
+    "notes": [],
+    "id": "v2_216"
+  },
+  {
+    "cahuilla": "'\u00e1ksa'vish",
+    "english": [
+      "the youngest person"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "origin": "common",
+    "related": [],
+    "tags": [],
+    "source": "Cahuilla Dictionary",
+    "notes": [],
+    "id": "v2_217"
   }
 ]

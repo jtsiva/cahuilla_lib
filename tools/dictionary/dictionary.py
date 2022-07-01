@@ -9,6 +9,8 @@ import shutil
 from whoosh.fields import Schema, ID, KEYWORD, TEXT
 from whoosh.index import create_in, open_dir
 from whoosh.qparser import MultifieldParser
+from whoosh.analysis import StemmingAnalyzer, CharsetFilter
+from whoosh.support.charset import accent_map
 
 class Dictionary():
     """
@@ -36,10 +38,12 @@ class Dictionary():
         Load raw word list and create searchable index. If index
         already exists then it is recreated.
         """
+
+        stem_analyzer = StemmingAnalyzer() | CharsetFilter(accent_map)
         
 
         #create Whoosh schema. Based on schema_v2
-        self.schema = Schema(cahuilla=ID(stored=True),
+        self.schema = Schema(cahuilla=ID(analyzer=stem_analyzer, stored=True),
                 english=KEYWORD(stored=True, commas=True),
                 pos=KEYWORD(stored=True,commas=True),
                 origin=ID(stored=True,),
@@ -172,6 +176,40 @@ class Dictionary():
 
         #reload index
         self._reload()
+
+    def get_blank(self):
+        """
+        Get a new entry template to fill out
+        """
+        #loop through to find highest id
+        highest_id = 0
+        word_list = None
+
+        #findest highest id so that we know our new id
+        with open(self.word_list_file) as file:
+            word_list = json.load(file)
+            for entry in word_list:
+                if int(entry['id'].split('_')[1]) > highest_id:
+                    highest_id = int(entry['id'].split('_')[1])
+
+        highest_id += 1
+        logging.debug(f"Next ID is: {highest_id}")
+
+        
+        #get dictionary entry template
+        with open(self._schema_file) as file:
+            new_entry = json.load(file)
+
+        new_entry['id'] = new_entry['id'] + str(highest_id)
+
+        return new_entry
+
+    def add_prefilled(self, new_entry):
+        """
+        Add an entry that already has an acceptable id and fields
+        """
+
+        self._updated_entries.append(("add", new_entry))
 
     def add(self, entry_data):
         """

@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% block content %}
+<h1>{% block title %} 'Ívillu'at Edutainment{% endblock %}</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><h2>Name</h2></th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+
+  <tr>
+    <td>
+      <a href="{{url_for('immersion_game')}}"
+        ><button class="button">Immersion Game</button></a
+      >
+    </td>
+    <td>
+      Set up scenes and practice describing what is gone. Take turns asking
+      about who is doing what or what is in the scene.
+    </td>
+  </tr>
+</table>
+{% endblock %}

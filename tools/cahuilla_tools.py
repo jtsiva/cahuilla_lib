@@ -181,6 +181,14 @@ def delete_entry(entry_id):
 
         return redirect(url_for('dictionary'))
 
+@app.route('/games', methods=['GET', 'POST'])
+def games():
+    return render_template('games.html')
+
+@app.route('/games/immersion', methods=['GET', 'POST'])
+def immersion_game():
+    return render_template('immersion_game.html')
+
 @app.context_processor
 def get_resources():
     """

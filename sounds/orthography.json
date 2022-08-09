@@ -1,4 +1,5 @@
 {
+  "ignore": ["á", "é", "í", "ó", "ú"],
   "saubel_chemivillu": [
     "a",
     "aa",

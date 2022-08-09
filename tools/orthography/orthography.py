@@ -3,6 +3,10 @@
 import json
 
 class Orthography():
+    """
+    Pulls in orthographic equivalencies from json, detects
+    the input orthography, and outputs alternatives
+    """
     def __init__ (self, orthography_file):
         self.orthography_dict = {}
         with open(orthography_file) as file:
@@ -10,7 +14,7 @@ class Orthography():
 
     def get_orthography(self,string):
         """
-        Check string
+        Check string to see which orthography matches
         """
         matching_ortho = "None"
         # sort characters in orthography by length and then match

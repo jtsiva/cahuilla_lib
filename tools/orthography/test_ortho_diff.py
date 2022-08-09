@@ -3,9 +3,9 @@ from orthography import Orthography
 
 def test_word_list_check():
     ortho = Orthography ('../sounds/orthography.json')
-    test_words = {"saubel_chemivillu" : ["waxachill", "sasang", "'ivillu'at"],
-    "seiler_dictionary" : ["waxačil̃", "sasaŋ", "ʔivil̃uʔat"],
-    "IPA" : ["wɑxɑt͡ʃiʎ", "sɑsɑŋ", "ʔiviʎuʔɑt"]}
+    test_words = {"saubel_chemivillu" : ["wáxachill", "sásang", "'ívillu'at"],
+    "seiler_dictionary" : ["wáxačil̃", "sásaŋ", "ʔívil̃uʔat"],
+    "IPA" : ["wɑxɑt͡ʃiʎ", "sɑsɑŋ", "ʔíviʎuʔɑt"]}
 
     #iterate over all the lists and make sure that each pair
     #and direction is correct

@@ -34,7 +34,7 @@ class Orthography():
                 test_str = test_str.replace(char, "") #remove matches
                 
 
-            if 0 == len(test_str) and match_score < best_match_score:
+            if 0 == len(test_str.strip()) and match_score < best_match_score:
                 matching_ortho = ortho_name
                 best_match_score = match_score
 
